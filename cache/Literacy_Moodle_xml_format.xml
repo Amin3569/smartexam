@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+        <text><![CDATA[$course$/Default for P&amp;C Council]]></text>
+
+    </category>
+  </question>
+
+<!-- question: 4012  -->
+  <question type="multichoice">
+    <name>
+      <text>*</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which sentence is correct?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>John gave the book to Susan and I.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>No!! Many people think this is correct because we would say "Susan and I gave the book to John" But in that sentence, "I" am the subject, so that's right. If you remove Susan from the first sentence, we can't say "John gave the book to I", can we? The person is the object, not the subject. Think again. (Also - look up <a href="http://en.wikipedia.org/wiki/Hypercorrection" target="_blank">Hypercorrection</a>.)</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>John gave the book to Susan and me</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Yes! Correct! Do you know WHY it is "me" and not "I"?</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>John gave the book to me and Susan</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>It's not grammatically wrong to say "me and Susan" but it's not really polite: you should always put other people before yourself, so think again!</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 4013  -->
+  <question type="multichoice">
+    <name>
+      <text>**</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What's this?</p>
+<p><img src="@@PLUGINFILE@@/whatisthis.png" width="115" height="209" /></p>]]></text>
+<file name="whatisthis.png" encoding="base64">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</file>    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>It is an eroteme.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>No it isn't. An eroteme is a fancy name for a question mark and this is not a question mark.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>It is an interrobang.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Yes! See (the always reliable and helpful) <a href="http://en.wikipedia.org/wiki/Interrobang" title="Interrobang on Wikipedia" target="_blank">Wikipedia </a></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>It is a guillemet.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>No it isn't. Guillemets are angle quotes, indicating speech. So think again...</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 4014  -->
+  <question type="multichoice">
+    <name>
+      <text>***</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which sentence is correct?</p>
+<p><em> </em></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><em>The amount of registered Moodle sites in the world is constantly increasing.</em></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>No. You don't use <em>amount</em> when you can count it - when it is quantifiable.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><em>The amount of registered Moodle sites in the world is consistently increasing.</em></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Wrong on two counts: it's not "amount" and who are we to presume "consistently"?</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p><em>The number of registered Moodle sites in the world is constantly increasing.</em></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Yes! But do you know why it isn't <em>amount</em>? </p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 4015  -->
+  <question type="multichoice">
+    <name>
+      <text>***</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is grammatically wrong with this famous Star Trek quote:</p>
+<p><em>...to boldly go where no man has gone before...</em></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Nothing - it looks good to me.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correct! Despite the arguments of grammarians over the years, there is nothing wrong with splitting infinitives. See that huge source of reliable information - Wikipedia <a href="http://en.wikipedia.org/wiki/Split_infinitive">http://en.wikipedia.org/wiki/Split_infinitive</a></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Ugh! The most famous split infinitive in history - you shouldn't have anyting between "to" and "go".</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Nothing wrong with split infinitives in English, although grammarians over the centuries have argued this out. See that  huge source of reliable information Wikipedia <a href="http://en.wikipedia.org/wiki/Split_infinitive">http://en.wikipedia.org/wiki/Split_infinitive</a>.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>It is sexist</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Well - it would be nice if they had added "and woman" too, but that doesn't actually make it grammatically incorrect. Think again...</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 4016  -->
+  <question type="multichoice">
+    <name>
+      <text>***</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which is correct?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>I must do my grammar practice.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Yes; well done. Practice is always "c" when it is a noun, and in American English, when it is a verb too. In UK English the spellings differ.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>I must do my grammer practice</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Grammer? Look again!!!</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>I must do my grammar practise.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>No. You use "s" if you are using UK English and it is a verb - you can practiSe but you do practiCe. If you are American you use "c" for both anyway.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 4021  -->
+  <question type="multichoice">
+    <name>
+      <text>***</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is wrong in this sentence?</p>
+<p><em>Now we have  less employees we are making less money.</em></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Nothing.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Sorry  -there IS something wrong this time!</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>It should be "fewer" employees.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Yes! If you can count them then you say "fewer". I will have fewer chocolates and less cake! (Think back to "amount" and "number".)</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>It should be "Now AS ..." and not "Now THAT..."</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>No. Think again...</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 4017  -->
+  <question type="multichoice">
+    <name>
+      <text>****</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is wrong with this sentence?</p>
+<p><em>Jack is making good progress in his French lessons, he should reach his target grade by summer.</em></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Nothing! (again)</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Noooo.... You could possibly get away with it, but Pedants Anonymous would have your number....</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>The comma is not right.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Yes. A comma is not strong enough to divide up those two  statements. They could be two separate sentences -or you could use a semi-colon.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>You should spell "summer" with a capital "S".</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>No need - think again.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 4019  -->
+  <question type="multichoice">
+    <name>
+      <text>*******</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which is correct? </p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>I was sat next to John in the exam</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Not necessarily! Depends on what you mean...</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>I was sitting next to John in the exam.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Not necessarily! Depends on what you mean.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Both are correct.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Yes. But do you know the difference? Most people say "I was sat" when they actually mean "I was sitting".  If you sat down of your own accord, you say "I was sitting". If someone such as an examination officer placed you in a particular seat, you say "I was sat".</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 4020  -->
+  <question type="multichoice">
+    <name>
+      <text>**************</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which of these is an example of a <em>dangling participle</em>?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p><em>Walking back home yesterday, a tree nearly fell on my head.</em></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Yes! Was the tree walking home? No!</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>(Winston Churchill) "<span>That is a rule </span><em>up with which I will not put</em><span>."</span></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>No. He is talking about the nonsense of NOT putting prepositions at the ends of sentences.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><em>This is just between you and I.</em></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>No. This is wrong (see question 1) but it is not a dangling participle.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 4018  -->
+  <question type="multichoice">
+    <name>
+      <text>Which is correct?</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Where does the <span style="color: #ff0000;"><strong>'</strong> </span>go?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>I have hung the children's clothes out to dry.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Yes well done.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>I have hung the childrens' clothes out to dry.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>No! Were you thinking that apostrophes go at the end when your word is plural? True -but this word changes completely in the plural. So think again!</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>I have hung the children's' clothes out to dry.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>We only need ONE apostrophe - so you have to make a choice here.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+</quiz>
