@@ -37,7 +37,7 @@ if (isset($_REQUEST['order_field']) and !empty($_REQUEST['order_field']) and (in
 }
 
 $output_format = isset($_REQUEST['format']) ? strtoupper($_REQUEST['format']) : 'XML';
-$out_filename = 'tcexam_user_results_'.$user_id.'_'.date('YmdHis');
+$out_filename = 'smartexam_user_results_'.$user_id.'_'.date('YmdHis');
 $xml = F_xml_export_user_results($user_id, $startdate, $enddate, $order_field);
 
 switch ($output_format) {
@@ -79,15 +79,7 @@ switch ($output_format) {
     }
 }
 
-/**
- * Export user results in XML format.
- * @param $user_id (int) user ID - if greater than zero, filter stats for the specified user.
- * @param $startdate (string) start date ID - if greater than zero, filter stats for the specified starting date
- * @param $enddate (string) end date ID - if greater than zero, filter stats for the specified ending date
- * @param $order_field (string) Ordering fields for SQL query.
- * @author Nicola Asuni
- * @return XML data
- */
+
 function F_xml_export_user_results($user_id, $startdate, $enddate, $order_field)
 {
     global $l, $db;

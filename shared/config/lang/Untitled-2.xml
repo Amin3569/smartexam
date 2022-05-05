@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmx version="1.4">
+   <header datatype="PlainText"
+           changedate="20200617T010500Z"
+           creationtoolversion="1"
+           segtype="sentence"
+           creationtool="hand made"
+           creationid="AminBeshir"
+           srclang="EN"
+           adminlang="en-us"
+           creationdate="20040427T100100Z"
+           o-tmf="ABCTransMem"/>
+    <body>
+    
+    <tu tuid="a_meta_charset" datatype="plaintext">
+      <tuv xml:lang="EN">
+            <seg>UTF-8</seg>
+         </tuv>
+    <tu tuid="a_meta_dir" datatype="plaintext">
+
+     <tuv xml:lang="EN">
+            <seg>ltr</seg>
+         </tuv>
+    <tu tuid="a_meta_language" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>en</seg>
+         </tuv>
+    <tu tuid="d_admin_index" datatype="plaintext">
+          <tuv xml:lang="EN">
+            <seg>This is the administration area of &lt;a href="tce_page_info.php" title="about SmartExam"&gt;SmartExam&lt;/a&gt;, is a platform and language independent user-friendly software to create, manage and perform online tests.&lt;br /&gt;&lt;br /&gt;From the menu you can access the different sections of the system:&lt;ul&gt;&lt;li&gt;&lt;strong&gt;users&lt;/strong&gt;&lt;br /&gt;This sections contains the forms for &lt;a href="tce_edit_user.php" title="User Management"&gt;insert and manage&lt;/a&gt; users, &lt;a href="tce_select_users.php" title="User Selection"&gt; to select them&lt;/a&gt; and to show the list of the ones currently &lt;a href="tce_show_online_users.php" title="Online Users"&gt;online&lt;/a&gt;.&lt;br /&gt;Only the registered users granted a username and a password are entitled to access the public area of the system and perform the tests.&lt;br /&gt;It is possible to specify different access levels for both the users and the different components and parts of the system (pages, forms, sections).&lt;br /&gt;SmartExam also uses another security system to prevent unauthorized access based on checking the IP addresses.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;modules&lt;/strong&gt;&lt;br /&gt;This section contains the forms to insert and modify test &lt;a href="tce_edit_module.php" title="Modules Management"&gt;modules&lt;/a&gt;, &lt;a href="tce_edit_subject.php" title="Topic Management"&gt;topics&lt;/a&gt;, the related &lt;a href="tce_edit_question.php" title="Question Management"&gt;questions&lt;/a&gt; and &lt;a href="tce_edit_answer.php" title="Multiple-Answer Management"&gt;answers&lt;/a&gt;.&lt;br /&gt;You can select an unlimited number of topics that can be used together for a specific test, and for each topic you can define an unlimited number of questions and possible answers. Depending on the settings of the Random question and Random answer tick boxes, the system can randomly select questions and answers among the available ones.&lt;br /&gt;SmartExam supports both multiple-answer questions and free-answer questions. The latter will be evaluated through a specific evaluation form &lt;a href="tce_edit_rating.php" title="Answer evaluation"&gt;&lt;/a&gt;, while the former will be automatically evaluated.&lt;br /&gt;All the descriptions of tests, topics, questions and answers support a particular proprietary code (tcecode) that, by using a specific form, allows the use of images and text formatting.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;test&lt;/strong&gt;&lt;br /&gt;This section includes a form to insert, generate and modify the different &lt;a href="tce_edit_test.php" title="Test Management"&gt;tests&lt;/a&gt;, a form to &lt;a href="tce_edit_rating.php" title="Answer Evaluation"&gt;evaluate&lt;/a&gt; the free answers and forms to show or generate PDF versions of the &lt;a href="tce_show_result_allusers.php" title="Test Results Summary"&gt;results&lt;/a&gt;, a detailed view of the &lt;a href="tce_show_result_user.php" title="Test Results"&gt;users' tests&lt;/a&gt; and the &lt;a href="tce_show_result_allusers.php" title="Question Statistics"&gt;statistics&lt;/a&gt; of questions and answers used.&lt;br /&gt;SmartExam can be instructed to select, on a random basis, the various questions and related available answers, so that all tests for the different users will be different from each other.&lt;br /&gt;It is also possible to generate an arbitrary number of tests in PDF format so that they can be printed and used for a conventional exam.&lt;/li&gt;&lt;/ul&gt;</seg>
+         </tuv>
+
+         <tu tuid="d_logout_desc" datatype="plaintext">
+
+           <tuv xml:lang="EN">
+            <seg>click on the button to exit the system</seg>
+         </tuv>
+         <tu tuid="d_SmartExam_desc" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>SmartExam is software for managing and perform online tests.</seg>
+         </tuv>
+         <tu tuid="h_add" datatype="plaintext">
+          <tuv xml:lang="EN">
+            <seg>add current record to database</seg>
+         </tuv>
+          <tu tuid="h_add_image" datatype="plaintext">
+          <tuv xml:lang="EN">
+            <seg>insert selected image into text</seg>
+         </tuv>
+         <tu tuid="h_add_object" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>insert selected object into text</seg>
+         </tuv>
+         <tu tuid="h_add_questions" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>insert the selected type of questions</seg>
+         </tuv>
+         <tu tuid="h_add_subject" datatype="plaintext">
+          <tuv xml:lang="EN">
+            <seg>insert the selected subject on this test</seg>
+         </tuv>
+         <tu tuid="h_add_tag" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>insert selected item</seg>
+         </tuv>
+         <tu tuid="h_allow_no_answer" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>if selected, an additional -no answer- choice will be added to each question</seg>
+         </tuv>
+         <tu tuid="h_answer" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>possible answer for the question selected</seg>
+         </tuv>
+          <tu tuid="h_answer_isright" datatype="plaintext">
+           <tuv xml:lang="EN">
+            <seg>select this option if the answer is correct</seg>
+         </tuv>
+         <tu tuid="h_answer_right" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>correct answer</seg>
+         </tuv>
+         <tu tuid="h_answer_score" datatype="plaintext">
+          <tuv xml:lang="EN">
+            <seg>points for this question (e.g.: 0.5, -0.1, ...)</seg>
+         </tuv>
+         <tu tuid="h_answer_selected" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>selected answer</seg>
+         </tuv>
+         <tu tuid="h_answer_time" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>average time to answer in mm:ss</seg>
+         </tuv>
+         <tu tuid="h_answer_wrong" datatype="plaintext">
+          <tuv xml:lang="EN">
+            <seg>wrong answer</seg>
+         </tuv>
+          <tu tuid="h_answers_right" datatype="plaintext">
+           <tuv xml:lang="EN">
+            <seg>correct answers</seg>
+         </tuv>
+         <tu tuid="h_answers_wrong" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>wrong answers</seg>
+         </tuv>
+         <tu tuid="h_birth_date" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>user's date of birth</seg>
+         </tuv>
+         <tu tuid="h_birth_place" datatype="plaintext">
+          <tuv xml:lang="EN">
+            <seg>user's place of birth (city, state, country)</seg>
+         </tuv>
+         <tu tuid="h_cancel" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>cancel changes or the current operation</seg>
+         </tuv>
+         <tu tuid="h_cancel_window" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>close form and cancels changes</seg>
+         </tuv>
+         <tu tuid="h_clear" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>reset form fields to blank</seg>
+         </tuv>
+         <tu tuid="h_close_window" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>close window</seg>
+         </tuv>
+         <tu tuid="h_continue" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>continue test</seg>
+         </tuv>
+         <tu tuid="h_database" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>modify database</seg>
+         </tuv>
+         <tu tuid="h_delete" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>delete current record from database</seg>
+         </tuv>
+         <tu tuid="h_display_all" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>show all answers including the ones already evaluated</seg>
+         </tuv>
+         <tu tuid="h_display_user_info" datatype="plaintext">
+          <tuv xml:lang="EN">
+            <seg>show the data of the user who wrote this answer</seg>
+         </tuv>
+          <tu tuid="h_email_all_results" datatype="plaintext">
+           <tuv xml:lang="EN">
+            <seg>send email test reports to all users</seg>
+         </tuv>
+         <tu tuid="h_email_result" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>send email test report to users</seg>
+         </tuv>
+         <tu tuid="h_enable_single_answer" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>if selected, enable the single answer mode</seg>
+         </tuv>
+         <tu tuid="h_enable_multiple_answers" datatype="plaintext">
+          <tuv xml:lang="EN">
+            <seg>if selected, enable multiple answers mode</seg>
+         </tuv>
+         <tu tuid="h_enable_free_answer" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>if selected, enable free-text answer mode</seg>
+         </tuv>
+         <tu tuid="h_enabled" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>enable/disable current record</seg>
+         </tuv>
+         <tu tuid="h_execute" datatype="plaintext">
+          <tuv xml:lang="EN">
+            <seg>run test</seg>
+         </tuv>
+         <tu tuid="h_file_type" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>file type</seg>
+         </tuv>
+         <tu tuid="h_file_type_xml" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>eXtensible Markup Language</seg>
+         </tuv>
+          <tu tuid="h_file_type_tsv" datatype="plaintext">
+           <tuv xml:lang="EN">
+            <seg>Tab Delimited Text File</seg>
+         </tuv>
+         <tu tuid="h_firstname" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>user's first name (e.g.: Amin, Linda, ...)</seg>
+         </tuv>
+         <tu tuid="h_fiscal_code" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>user's social security number</seg>
+         </tuv>
+         <tu tuid="h_global_score" datatype="plaintext">
+          <tuv xml:lang="EN">
+            <seg>if selected, overwrite the answers points with the points below</seg>
+         </tuv>
+         <tu tuid="h_group_name" datatype="plaintext">
+          <tuv xml:lang="EN">
+            <seg>users' group name</seg>
+         </tuv>
+          <tu tuid="h_guide" datatype="plaintext">
+          <tuv xml:lang="EN">
+            <seg>help</seg>
+         </tuv>
+         <tu tuid="h_index" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>main page</seg>
+         </tuv>
+         <tu tuid="h_info" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>about SmartExam</seg>
+         </tuv>
+         <tu tuid="h_ip" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>IP address of the computer from which data have been sent</seg>
+         </tuv>
+         <tu tuid="h_ip_range" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>list of enabled IP addresses separated by commas (e.g.: 192.168.*.*,127.0.0.*,192.168.234.16-192.168.234.32,::ffff:c0a8:0110-::ffff:c0a8:0140)</seg>
+         </tuv>
+         <tu tuid="h_lastname" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>User's last name (example: Amin, Linda,Ashenafi ...)</seg>
+         </tuv>
+         <tu tuid="h_level" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>user's level, level 0 indicates an anonymous user (not registered), level 1 indicates a basic user, level 10 indicates an administrator with full access rights</seg>
+         </tuv>
+         <tu tuid="h_login_button" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>click here to log-in</seg>
+         </tuv>
+         <tu tuid="h_login_name" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>username, name used to log in this multi-user system</seg>
+         </tuv>
+         <tu tuid="h_logout_link" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>click on this link to exit the system (session end)</seg>
+         </tuv>
+         <tu tuid="h_num_answers" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>maximum number of alternative answers for each question</seg>
+         </tuv>
+         <tu tuid="h_num_questions" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>maximum number of questions</seg>
+         </tuv>
+         <tu tuid="h_num_tquestions" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>maximum number of free-answer questions</seg>
+         </tuv>
+         <tu tuid="h_object_width" datatype="plaintext">
+          <tuv xml:lang="EN">
+            <seg>object width [pixels]</seg>
+         </tuv>
+         <tu tuid="h_object_height" datatype="plaintext">
+          <tuv xml:lang="EN">
+            <seg>object height [pixels]</seg>
+         </tuv>
+         <tu tuid="h_password" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>password, alphanumeric code that together with the username grants access to this system</seg>
+         </tuv>
+         <tu tuid="h_password_repeat" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>repeat the password in this field to check for possible typing mistakes</seg>
+         </tuv>
+         <tu tuid="h_pdf" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>generate a PDF document</seg>
+         </tuv>
+         <tu tuid="h_pdf_all" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>generate a detailed report for each user</seg>
+         </tuv>
+         <tu tuid="h_pdf_offline_test" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>generate PDF documents for off-line test execution</seg>
+         </tuv>
+         <tu tuid="h_preview" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>show a preview of the code previously entered</seg>
+         </tuv>
+         <tu tuid="h_question" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>question related to the topic selected</seg>
+         </tuv>
+         <tu tuid="h_question_answered" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>this question has been already answered</seg>
+         </tuv>
+         <tu tuid="h_question_not_answered" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>this question has not been answered</seg>
+         </tuv>
+         <tu tuid="h_question_description" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>type of question (e.g.: true, false, ...)</seg>
+         </tuv>
+         <tu tuid="h_question_difficulty" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>difficulty level - multiplier for basic points</seg>
+         </tuv>
+         <tu tuid="h_question_displayed" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>this question has been displayed</seg>
+         </tuv>
+         <tu tuid="h_question_not_displayed" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>this question has not been displayed</seg>
+         </tuv>
+         <tu tuid="h_question_recurrence" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>recurrence of this question in the various tests</seg>
+         </tuv>
+         <tu tuid="h_question_type" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>type of question</seg>
+         </tuv>
+         <tu tuid="h_questions_unanswered" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>unanswered questions</seg>
+         </tuv>
+         <tu tuid="h_questions_undisplayed" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>questions not displayed</seg>
+         </tuv>
+         <tu tuid="h_questions_unrated" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>questions not rated</seg>
+         </tuv>
+         <tu tuid="h_random_answers" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>if selected, extract randomly the multiple answers related to each question</seg>
+         </tuv>
+         <tu tuid="h_random_questions" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>if selected, extract randomly the questions related to each selected topic</seg>
+         </tuv>
+         <tu tuid="h_regcode" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>registration number, user's registration number</seg>
+         </tuv>
+         <tu tuid="h_regdate" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>user's date of registration</seg>
+         </tuv>
+         <tu tuid="h_result" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>shows the results of the test</seg>
+         </tuv>
+         <tu tuid="h_results_to_users" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>if selected, allow users to see results</seg>
+         </tuv>
+         <tu tuid="h_select_question" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>select this question</seg>
+         </tuv>
+         <tu tuid="h_score" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>points for this answer</seg>
+         </tuv>
+         <tu tuid="h_score_average" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>average score</seg>
+         </tuv>
+         <tu tuid="h_score_right" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>basic points for each difficulty level of questions</seg>
+         </tuv>
+         <tu tuid="h_score_total" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>final score</seg>
+         </tuv>
+         <tu tuid="h_score_unanswered" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>points for non-answered questions (e.g.: 0, -0.5, ...)</seg>
+         </tuv>
+         <tu tuid="h_score_wrong" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>points for wrong answers (e.g.: 0, -0.1, ...)</seg>
+         </tuv>
+         <tu tuid="h_select_answer" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>select the answers to be evaluated</seg>
+         </tuv>
+         <tu tuid="h_select_user" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>open a user selection page</seg>
+         </tuv>
+         <tu tuid="h_subject" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>test topic</seg>
+         </tuv>
+         <tu tuid="h_subject_description" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>description of test topic</seg>
+         </tuv>
+         <tu tuid="h_subject_name" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>name of test topic</seg>
+         </tuv>
+         <tu tuid="h_subjects" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>list of test topics</seg>
+         </tuv>
+         <tu tuid="h_submit" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>send form data to the calling process</seg>
+         </tuv>
+         <tu tuid="h_tcecode_editor" datatype="plaintext">
+          <tuv xml:lang="EN">
+            <seg>editor that allows text formatting by using a simple proprietary code</seg>
+         </tuv>
+         <tu tuid="h_test" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>test, exam</seg>
+         </tuv>
+         <tu tuid="h_test_description" datatype="plaintext">
+         <tuv xml:lang="EN">
+            <seg>test description</seg>
+         </tuv>
+         
+
+
+

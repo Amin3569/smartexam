@@ -1,31 +1,5 @@
 <?php
-//============================================================+
-// File name   : tce_db_config.php
-// Begin       : 2001-09-02
-// Last Update : 2013-07-05
-//
-// Description : Database congiguration file.
-//
-// Author: Nicola Asuni
-//
-// (c) Copyright:
-//               Nicola Asuni
-//               Tecnick.com LTD
-//               www.tecnick.com
-//               info@tecnick.com
-//
-// License:
-//    Copyright (C) 2004-2012  Nicola Asuni - Tecnick.com LTD
-//    See LICENSE.TXT file for more information.
-//============================================================+
 
-/**
- * @file
- * Database congiguration file.
- * @package com.tecnick.tcexam.shared.cfg
- * @author Nicola Asuni
- * @since 2001-09-02
- */
 
 /**
  * database type (MYSQL, POSTGRESQL, ORACLE)
@@ -46,9 +20,7 @@ define('K_DATABASE_HOST', '');
  */
 define('K_DATABASE_PORT', '');
 
-/**
- * database name (TCExam)
- */
+
 define('K_DATABASE_NAME', '');
 
 /**

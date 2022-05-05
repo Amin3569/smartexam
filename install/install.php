@@ -18,10 +18,10 @@ echo '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.or
 echo '<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">'."\n";
 
 echo '<head>'."\n";
-echo '<title>TCExam - Installation</title>'."\n";
+echo '<title>SmartExam - Installation</title>'."\n";
 echo '<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />'."\n";
-echo '<meta name="description" content="Installation Script for TCExam" />'."\n";
-echo '<meta name="author" content="Nicola Asuni - Tecnick.com LTD" />'."\n";
+echo '<meta name="description" content="Installation Script for SmartExam" />'."\n";
+echo '<meta name="authors" content="Amin,Linda,Ashenafi,Afework and Mengestu" />'."\n";
 echo '<meta http-equiv="Pragma" content="no-cache" />'."\n";
 echo '<link rel="stylesheet" href="../admin/styles/default.css" type="text/css" />'."\n";
 echo '</head>'."\n";
@@ -64,13 +64,13 @@ if (isset($_REQUEST['forceinstall']) AND ($_REQUEST['forceinstall'] == 1)) {
 
 	//install database
 	echo "\n".'<ul class="log">';
-	echo "\n".'<li>start TCExam installation............<span style="color:#008000">[OK]</span></li>';
+	echo "\n".'<li>start SmartExam installation............<span style="color:#008000">[OK]</span></li>';
 
 	echo "\n".'<li>start database installation.........<span style="color:#008000">[OK]</span>';
 
 	echo "\n".'<ul class="log">';
 	error_log('[START] database installation'."\n", 3, $progress_log); //log info
-	// Install TCExam database
+	// Install SmartExam database
 	F_install_database($_REQUEST['db_type'], $_REQUEST['db_host'], $_REQUEST['db_port'], $_REQUEST['db_user'], $_REQUEST['db_password'], $_REQUEST['database_name'], $_REQUEST['table_prefix'], $drop_existing, $create_new, $progress_log);
 	error_log('[END] database installation'."\n", 3, $progress_log); //log info
 	echo "\n".'</ul>';
@@ -90,7 +90,7 @@ if (isset($_REQUEST['forceinstall']) AND ($_REQUEST['forceinstall'] == 1)) {
 
 	echo "\n".'<li>end config files update.............<span style="color:#008000">[OK]</span></li>';
 
-	echo "\n".'<li>end TCExam installation..............<span style="color:#008000">[OK]</span></li>';
+	echo "\n".'<li>end SmartExam installation..............<span style="color:#008000">[OK]</span></li>';
 	echo "\n".'</ul>';
 
 	//display here post-installation comments
@@ -101,7 +101,7 @@ if (isset($_REQUEST['forceinstall']) AND ($_REQUEST['forceinstall'] == 1)) {
 	echo "\n".'Now you can manually change the configuration files to fit your needs.<br />';
 	echo "\n".'After config files changes please set the write permission of these files to read only (chmod 644 on unix like systems).<br />';
 	echo "\n".'<br />';
-	echo "\n".'If it\'s all OK <a href="../admin/code/index.php">click here</a> to start TCExam.<br />';
+	echo "\n".'If it\'s all OK <a href="../admin/code/index.php">click here</a> to start SmartExam.<br />';
 	echo "\n".'<br /></p>';
 
 	error_log('--- END LOG: '.date('Y-m-d H:i:s').' ---'."\n", 3, $progress_log); //create progress log file
@@ -136,7 +136,7 @@ if (isset($_REQUEST['forceinstall']) AND ($_REQUEST['forceinstall'] == 1)) {
 		$_REQUEST['db_port'] = '3306';
 		$_REQUEST['db_user'] = 'root';
 		$_REQUEST['db_password'] = '';
-		$_REQUEST['database_name'] = 'tcexam';
+		$_REQUEST['database_name'] = 'smartexam';
 		$_REQUEST['table_prefix'] = 'tce_';
 		if (isset($_SERVER['HTTP_HOST']) and !empty($_SERVER['HTTP_HOST'])) {
 			if(isset($_SERVER['HTTPS']) AND !empty($_SERVER['HTTPS']) AND strtolower($_SERVER['HTTPS'])!='off') {
@@ -306,7 +306,8 @@ To start installation fill the form below and click the INSTALL button.<br />
 <div class="row">
 <input type="hidden" name="forceinstall" id="forceinstall" value="" />
 <input type="hidden" name="startinstall" id="startinstall" value="" />
-<input type="button" name="install" id="install" value="INSTALL" onclick="document.getElementById('form_TCExam_installer').startinstall.value=1; document.getElementById('form_TCExam_installer').submit()" title="click here to install TCExam"/>
+<input type="button" name="install" id="install" value="INSTALL" onclick="document.getElementById('form_TCExam_installer').startinstall.value=1; document.getElementById('form_TCExam_installer').submit()" title="click here to install SmartExam"/>
+
 </div>
 
 </form>

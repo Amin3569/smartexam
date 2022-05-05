@@ -4,19 +4,19 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
 
 <head>
-<title>Smart online exam Installation</title>
+<title>Smart Exam Installation</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<meta name="description" content="Smart online exam Installation instructions" />
-<meta name="author" content="nick"/>
-<meta name="keywords" content="Installation, Smart online exam, CBA, Computer-Based Assessment, CBT, Computer-Based Testing, e-exam, test, exam" />
+<meta name="description" content="Smart Exam Installation instructions" />
+<meta name="authors" content="Amin,Linda,Ashenafi,Afework and Mengestu"/>
+<meta name="keywords" content="Installation, Smart Exam, CBA, Computer-Based Assessment, CBT, Computer-Based Testing, e-exam, test, exam" />
 </head>
 
 <body>
 
-<h1>Smart Exam Maker and Checker Platform Installation</h1>
+<h1>Smart Exam  Installation</h1>
 
 <a name="requirements"></a>
-<h2>Smart online exam System Requirements</h2>
+<h2>Smart Exam Requirements</h2>
 
 <p>The <a href="#installation" title="Smart online exam Installation">installation instructions</a> assumes that you have a fully functioning web server.<br />To install Smart online exam on Linux, check the guide on:<strong><a href="#" title="Smart online exam Website" target="_blank">www.samrtexam.et</a></strong><br /><br />These are the minimum requirements needed before installation of Smart online exam can be successful:</p><ul>
 <li>A Web server: <strong>Apache</strong> 1.3+ (<a href="http://httpd.apache.org/" title="Apache [external wesite]" target="_blank">http://httpd.apache.org/</a>) or <strong>IIS</strong> 6+ (<a href="http://www.microsoft.com" title="IIS [external wesite]" target="_blank">http://www.microsoft.com</a>).</li>
@@ -82,28 +82,22 @@ php_value variables_order "EGPCS"
 php_value request_order "GPC"</pre></li></ul>
 
 <a name="installation"></a>
-<h2>Installation</h2><p>When installing Smart online exam for the first time, verify the <a href="#requirements" title="Smart online exam System Requirements">system requirements</a>. Assuming you have a working Apache/IIS web server, with PHP and a MySQL/PostgreSQL DBMS, you are on your way to installing Smart online exam.<br />
+<h2>Installation</h2><p>When installing Smart Exam for the first time, verify the <a href="#requirements" title="Smart Exam Requirements">system requirements</a>. Assuming you have a working Apache/IIS web server, with PHP and a MySQL DBMS, you are on your way to installing Smart Exam.<br />
 
 If you are getting the Smart online exam source code using GIT and you are installing it for the first time, please rename the "config.default" folders inside admin, public and shared to "config".
 
-<h3>Smart online exam Upgrade</h3>
-<p>The Smart online exam upgrade process may vary at each release. Detailed instructions are contained on the UPGRADE.TXT file attached to each Smart online exam release.</p>
-
-<h3>Getting the files</h3>
-<p>Smart online exam can be downloaded from <a title="Smart online exam download" href="https://github.com/tecnickcom/Smart online exam" target="_blank">GitHub</a>. The file is a compressed archive so you will need an utility program, either locally or on your host server, that can "unzip" the file (i.e. WinZip, WinRAR, 7Zip). Ensure that you choose latest stable release version.</p>
-
 <h4>Installing Files</h4>
-<p>We are assuming you have established a working web server, with the <a href="#requirements" title="Smart online exam System Requirements">necessary requirements</a>, and that you know where to put files to display on the web server.<br />
+<p>We are assuming you have established a working web server, with the <a href="#requirements" title="Smart Exam Requirements">necessary requirements</a>, and that you know where to put files to display on the web server.<br />
 Unzip the distribution file into a directory under your web server root. If you are using the Apache web server, this is typically <em>c:\apache group\apache\htdocs</em> on the Windows OS and <em>/usr/local/apache/htdocs</em> or <em>/var/www/</em> on a UNIX-like system but it my vary particularly on hosted servers and between different distributions of GNU-Linux OS.<br />
-What you do to install Smart online exam on a remote host is largely dependent upon the facilities your host provides - with regard to Control Panel software and connection resources. It may also depend upon your own skills concerning server access methods. A simple and typical procedure may involve: unzip the Smart online exam distribution file to a local directory on your local computer and then FTP the files to the host server placing them either directly under, or in, a directory under the web server root. There are many free FTP programs available for this operation, such as Filezilla. A Google search or visit to any of the open source resource sites will assist you in finding a suitable tool.<br /><br />
-When you have finished uploading the files and folders, change the files owner to the Web server user (typically "www-data" or "apache"). On POSIX based systems (like Unix, Linux, etc), change to the Smart online exam directory and enter the following system command (substitute the user name appropriate for your system): <em>chown -R apache:apache /var/www/Smart online exam</em>.<br />
+What you do to install Smart Exam on a remote host is largely dependent upon the facilities your host provides - with regard to Control Panel software and connection resources. It may also depend upon your own skills concerning server access methods. A simple and typical procedure may involve: unzip the Smart online exam distribution file to a local directory on your local computer and then FTP the files to the host server placing them either directly under, or in, a directory under the web server root. There are many free FTP programs available for this operation, such as Filezilla. A Google search or visit to any of the open source resource sites will assist you in finding a suitable tool.<br /><br />
+When you have finished uploading the files and folders, change the files owner to the Web server user (typically "www-data" or "apache"). On POSIX based systems (like Unix, Linux, etc), change to the Smart Exam directory and enter the following system command (substitute the user name appropriate for your system): <em>chown -R apache:apache /var/www/Smart online exam</em>.<br />
 Change the files access permission so that all user can write into the them. On POSIX based systems change to the Smart online exam directory and enter the following system command: <em>chmod -R 777 /var/www/Smart online exam</em>. For security reasons, you must properly set the permissions of these files at the end of the installation process.</p>
 
 <a name="browser" id="browser"></a>
 
 <h3>Browser Installation</h3>
 <p>This type of installation will automatically install the database and will configure the essential system parameters. The installation process will delete any data of previous installations of Smart online exam, reason why in this case it is advisable to make backup copy of these data.<br /><br />
-Point your Web browser (i.e. Mozilla Firefox or Internet Explorer) to the Smart online exam installation script (http://www.yoursite.com/install/install.php or http://yoursite.com/Smart online exam_folder/install/install.php). To start the installation you must fill up the form completely and press the button INSTALL.</p>
+Point your Web browser (i.e. Mozilla Firefox or chrome) to the Smart Exam installation script (http://www.yoursite.com/install/install.php or http://yoursite.com/Smart Exam_folder/install/install.php). To start the installation you must fill up the form completely and press the button INSTALL.</p>
 
 The required fields are:<ul>
 <li><strong>db type</strong>: type of DBMS (the default is <em>MySQL</em>).</li>

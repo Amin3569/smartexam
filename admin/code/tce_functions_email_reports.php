@@ -117,7 +117,7 @@ function F_send_report_emails($test_id, $user_id = 0, $testuser_id = 0, $group_i
                 // create PDF doc
                 $pdf_content = file_get_contents(K_PATH_HOST.K_PATH_TCEXAM.'admin/code/tce_pdf_results.php?mode=3&diplay_mode='.$display_mode.'&show_graph='.$show_graph.'&test_id='.$tu['test']['test_id'].'&user_id='.$tu['user_id'].'&testuser_id='.$tu['id'].'&email='.urlencode($pdfkey));
                 // set PDF document file name
-                $doc_name = 'tcexam_report';
+                $doc_name = 'smartexam_report';
                 $doc_name .= '_3';
                 $doc_name .= '_0';
                 $doc_name .= '_'.$tu['test']['test_id'];

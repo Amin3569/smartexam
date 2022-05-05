@@ -58,7 +58,7 @@ function F_tsv_export_users()
 				AND ta.usrgrp_user_id='.intval($_SESSION['session_user_id']).'
 				AND tb.usrgrp_user_id=user_id)';
     }
-    $sql .= ' ORDER BY user_lastname,user_firstname,user_name';
+    $sql .= ' ORDER BY user_firstname,user_lastname,user_name';
     if ($r = F_db_query($sql, $db)) {
         while ($m = F_db_fetch_array($r)) {
             $tsv .= K_NEWLINE.$m['user_id'];

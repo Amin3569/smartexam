@@ -1,34 +1,5 @@
 <?php
-//============================================================+
-// File name   : tce_ldap.php
-// Begin       : 2008-03-28
-// Last Update : 2015-03-27
-//
-// Description : Configuration file for LDAP
-//
-// Author: Nicola Asuni
-//
-// (c) Copyright:
-//               Nicola Asuni
-//               Tecnick.com LTD
-//               www.tecnick.com
-//               info@tecnick.com
-//
-// License:
-//    Copyright (C) 2004-2015  Nicola Asuni - Tecnick.com LTD
-//    See LICENSE.TXT file for more information.
-//============================================================+
 
-/**
- * @file
- * Configuration file for LDAP
- * LDAP is the Lightweight Directory Access Protocol, and is a protocol used to access "Directory Servers".
- * The Directory is a special kind of database that holds information in a tree structure.
- * Check http://www.php.net/manual/en/ref.ldap.php for requirements and installation.
- * @package com.tecnick.tcexam.shared.cfg
- * @author Nicola Asuni
- * @since 2008-03-28
- */
 
 /**
  * If true enable LDAP.
@@ -72,9 +43,7 @@ define('K_LDAP_BASE_DN', 'ou=users,dc=mydom,dc=example,dc=org');
  */
 define('K_LDAP_FILTER', 'uid=#USERNAME#');
 
-/**
- * Array of the required attributes. This array maps TCExam user data with LDAP attributes.
- */
+
 $ldap_attr = array();
 $ldap_attr['dn'] = 'dn';
 $ldap_attr['user_email'] = 'mail';
@@ -95,11 +64,7 @@ define('K_LDAP_UTF8', true);
  */
 define('K_LDAP_USER_LEVEL', 1);
 
-/**
- * Default user group ID.
- * This is the TCExam group id to which the LDAP accounts belongs.
- * You can also set 0 for all available groups or a string containing a comma-separated list of group IDs.
- */
+
 define('K_LDAP_USER_GROUP_ID', 1);
 
 //============================================================+

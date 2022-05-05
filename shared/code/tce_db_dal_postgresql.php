@@ -1,15 +1,6 @@
 <?php
 
-/**
- * Open a connection to a PostgreSQL Server and select a database.
- * If a second call is made to this function with the same arguments, no new link will be established, but instead, the link identifier of the already opened link will be returned.
- * @param $host (string) database server host name.
- * @param $port (string) database connection port
- * @param $username (string) Name of the user that owns the server process.
- * @param $password (string) Password of the user that owns the server process.
- * @param $database (string) Database name.
- * @return PostgreSQL link identifier on success, or FALSE on failure.
- */
+
 function F_db_connect($host = 'localhost', $port = '5432', $username = 'postgres', $password = '', $database = 'template1')
 {
     $connection_string = 'host=\''.$host.'\' port=\''.$port.'\' dbname=\''.$database.'\' user=\''.$username.'\' password=\''.$password.'\'';

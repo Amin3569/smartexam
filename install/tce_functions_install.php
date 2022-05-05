@@ -1,19 +1,6 @@
 <?php
 
-/**
- * Install TCExam database.
- * @param string $db_type database type (MySQL)
- * @param string $db_host database host
- * @param string $db_port database port number
- * @param string $db_user database user
- * @param string $db_password database password
- * @param string $database_name database name
- * @param string $table_prefix prefix for tables
- * @param boolean $drop_database if true drop existing database
- * @param boolean $create_new if true creates new database
- * @param string $progress_log log file name
- * @return boolean True in case of success, False otherwise.
- */
+
 function F_install_database($db_type, $db_host, $db_port, $db_user, $db_password, $database_name, $table_prefix, $drop_database, $create_new, $progress_log) {
 	ini_set('memory_limit', '256M');
 	define ('K_DATABASE_TYPE', $db_type); // database type (for Database Abstraction Layer)

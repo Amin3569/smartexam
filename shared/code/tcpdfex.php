@@ -6,10 +6,7 @@ require(dirname(__FILE__).'/../tcpdf/tcpdf.php');
 class TCPDFEX extends TCPDF
 {
 
-    /**
-     * URL link that points back to TCExam website.
-     * @protected
-     */
+    
     protected $tcexam_backlink = '';
 
     /**
@@ -59,11 +56,7 @@ class TCPDFEX extends TCPDF
         $this->tce_main_cell_height = round(($this->tce_cell_height_ratio * PDF_FONT_SIZE_MAIN) / $this->getScaleFactor(), 2);
     }
 
-    /**
-     * Set an URL link that points back to TCExam website (this will be printed as QR-Code on header).
-     * @param $link URL link.
-     * @public
-     */
+   
     public function setTCExamBackLink($link)
     {
         $this->tcexam_backlink = $link;

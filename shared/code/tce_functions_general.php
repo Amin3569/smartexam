@@ -1,11 +1,6 @@
 <?php
 
-/**
- * Count rows of the given table.
- * @param $dbtable (string) database table name
- * @param $where (string) optional where SQL clause (including the WHERE keyword).
- * @return number of rows
- */
+
 function F_count_rows($dbtable, $where = '')
 {
     global $db;
@@ -648,13 +643,7 @@ function F_utf8_normalizer($str, $mode = 'NONE')
     }
 }
 
-/**
- * Convert an long integer number to a Hexadecimal representation
- * @param string|int $dec Decimal number to convert.
- * @return string containing the HEX representation in uppercase.
- * @author Nicola Asuni
- * @since 2013-07-02
- */
+
 function bcdechex($dec)
 {
     $last = bcmod($dec, 16);

@@ -86,17 +86,7 @@ switch ($output_format) {
     }
 }
 
-/**
- * Export results in XML format.
- * @param $test_id (int) test ID.
- * @param $group_id (int) group ID - if greater than zero, filter stats for the specified user group.
- * @param $user_id (int) user ID - if greater than zero, filter stats for the specified user.
- * @param $startdate (int) start date ID - if greater than zero, filter stats for the specified starting date
- * @param $enddate (int) end date ID - if greater than zero, filter stats for the specified ending date
- * @param $display_mode (int) display mode: 0 = disabled; 1 = minimum; 2 = module; 3 = subject; 4 = question; 5 = answer.
- * @author Nicola Asuni
- * @return XML data
- */
+
 function F_xml_export_results($test_id, $group_id = 0, $user_id = 0, $startdate = 0, $enddate = 0, $display_mode = 1)
 {
     global $l, $db;

@@ -245,8 +245,8 @@ echo '<label for="testuser_id">'.$l['w_user'].' - '.$l['w_test'].'</label>'.K_NE
 echo '</span>'.K_NEWLINE;
 echo '<span class="formw">'.K_NEWLINE;
 echo '<select name="testuser_id" id="testuser_id" size="0" onchange="document.getElementById(\'form_resultuser\').submit()" title="'.$l['h_select_user'].'">'.K_NEWLINE;
-$sql = 'SELECT testuser_id, user_lastname, user_firstname, user_name, testuser_creation_time FROM '.K_TABLE_TEST_USER.', '.K_TABLE_USERS.' WHERE testuser_user_id=user_id AND testuser_test_id='.intval($test_id).'';
-$sql .= ' ORDER BY user_lastname, user_firstname, user_name, testuser_creation_time DESC';
+$sql = 'SELECT testuser_id, user_firstname, user_lastname, user_name, testuser_creation_time FROM '.K_TABLE_TEST_USER.', '.K_TABLE_USERS.' WHERE testuser_user_id=user_id AND testuser_test_id='.intval($test_id).'';
+$sql .= ' ORDER BY user_firstname,user_lastname,  user_name, testuser_creation_time DESC';
 if ($r = F_db_query($sql, $db)) {
     $usrcount = 1;
     while ($m = F_db_fetch_array($r)) {

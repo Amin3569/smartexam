@@ -13,7 +13,7 @@ require_once('../../shared/code/tce_functions_form.php');
 require_once('tce_functions_user_select.php');
 
 if (!isset($order_field)) {
-    $order_field='user_lastname,user_firstname';
+    $order_field='user_firstname,user_lastname';
 }
 if (!isset($orderdir)) {
     $orderdir=0;

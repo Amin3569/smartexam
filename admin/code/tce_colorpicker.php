@@ -10,11 +10,7 @@ echo '<script src="'.K_PATH_SHARED_JSCRIPTS.'inserttag.js" type="text/javascript
 F_html_color_picker($_REQUEST['frm'], $_REQUEST['fld'], $_REQUEST['tag']);
 require_once('../code/tce_page_footer_popup.php');
 
-/**
- * Display Color Picker
- * @author Nicola Asuni
- * @since 2008-10-01
- */
+
 function F_html_color_picker($callingform, $callingfield, $tag)
 {
     global $l;

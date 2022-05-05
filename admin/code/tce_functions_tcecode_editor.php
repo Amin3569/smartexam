@@ -87,17 +87,7 @@ function tcecodeEditorTagButtons($callingform, $callingfield)
     return $buttons;
 }
 
-/**
- * Display one tag button
- * @param $name (string) name of the button
- * @param $tag (string) tag value
- * @param $image (string) image file of button
- * @param $onclick (string) default onclick action
- * @param $accesskey (string) accesskey: character for keyboard shortcut
- * @return XHTML string
- * @author Nicola Asuni
- * @since 2006-03-07
- */
+
 function getImageButton($name, $tag, $image, $onclick = '', $accesskey = '')
 {
     if (strlen($tag) > 0) {

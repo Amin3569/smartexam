@@ -20,9 +20,6 @@ $menu['tce_page_user.php']['sub'] = array(
 echo '<a name="menusection" id="menusection"></a>'.K_NEWLINE;
 
 // link to skip navigation
-echo '<div class="hidden">';
-echo '<a href="#topofdoc" accesskey="2" title="[2] '.$l['w_skip_navigation'].'">'.$l['w_skip_navigation'].'</a>';
-echo '</div>'.K_NEWLINE;
 
 $menudata = '';
 foreach ($menu as $link => $data) {
@@ -32,8 +29,13 @@ foreach ($menu as $link => $data) {
 if (!empty($menudata)) {
     echo '<ul class="menu">'.K_NEWLINE;
     echo $menudata;
-    echo '</ul>'.K_NEWLINE; // end of menu
+    echo '</ul>'.K_NEWLINE;
+     // end of menu
 }
+include('../../shared/code/tce_page_timer.php');
+echo '<a name="timersection" id="timersection"></a>';
+
+
 
 //============================================================+
 // END OF FILE

@@ -1,12 +1,6 @@
 <?php
 
-/**
- * Return an array containing descriptive statistics for the bidimensional input array.
- * @author Nicola Asuni
- * @since 2008-12-25
- * @param $data (array) input data as bidimesional array. The first dimension is a set of data, the second contains data.
- * @return array of statistical results. The keys of the input data are peserved.
- */
+
 function F_getArrayStatistics($data)
 {
     $stats = array();

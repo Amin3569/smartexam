@@ -8,19 +8,7 @@ function F_select_user($order_field, $orderdir, $firstrow, $rowsperpage, $group_
     return true;
 }
 
-/**
- * Display user selection XHTML table.
- * @author Nicola Asuni
- * @since 2001-09-13
- * @param $order_field (string) Order by column name.
- * @param $orderdir (int) Order direction.
- * @param $firstrow (int) Number of first row to display.
- * @param $rowsperpage (int) Number of rows per page.
- * @param $group_id (int) ID of the group (default = 0 = no specific group selected).
- * @param $andwhere (string) Additional SQL WHERE query conditions.
- * @param $searchterms (string) Search terms.
- * @return false in case of empty database, true otherwise
- */
+
 function F_show_select_user($order_field, $orderdir, $firstrow, $rowsperpage, $group_id = 0, $andwhere = '', $searchterms = '')
 {
     global $l, $db;
@@ -41,7 +29,7 @@ function F_show_select_user($order_field, $orderdir, $firstrow, $rowsperpage, $g
     $rowsperpage = intval($rowsperpage);
     $group_id = intval($group_id);
     if (empty($order_field) or (!in_array($order_field, array('user_id', 'user_name', 'user_password', 'user_email', 'user_regdate', 'user_ip', 'user_firstname', 'user_lastname', 'user_birthdate', 'user_birthplace', 'user_regnumber', 'user_ssn', 'user_level', 'user_verifycode')))) {
-        $order_field = 'user_lastname,user_firstname';
+        $order_field = 'user_firstname,user_lastname';
     }
     if ($orderdir == 0) {
         $nextorderdir=1;
@@ -96,8 +84,8 @@ function F_show_select_user($order_field, $orderdir, $firstrow, $rowsperpage, $g
                 $filter .= '&amp;searchterms='.urlencode($searchterms);
             }
             echo F_select_table_header_element('user_name', $nextorderdir, $l['h_login_name'], $l['w_user'], $order_field, $filter);
-            echo F_select_table_header_element('user_lastname', $nextorderdir, $l['h_lastname'], $l['w_lastname'], $order_field, $filter);
             echo F_select_table_header_element('user_firstname', $nextorderdir, $l['h_firstname'], $l['w_firstname'], $order_field, $filter);
+            echo F_select_table_header_element('user_lastname', $nextorderdir, $l['h_lastname'], $l['w_lastname'], $order_field, $filter);
             echo F_select_table_header_element('user_regnumber', $nextorderdir, $l['h_regcode'], $l['w_regcode'], $order_field, $filter);
             echo F_select_table_header_element('user_level', $nextorderdir, $l['h_level'], $l['w_level'], $order_field, $filter);
             echo F_select_table_header_element('user_regdate', $nextorderdir, $l['h_regdate'], $l['w_regdate'], $order_field, $filter);
@@ -116,8 +104,8 @@ function F_show_select_user($order_field, $orderdir, $firstrow, $rowsperpage, $g
                 echo ' />';
                 echo '</td>'.K_NEWLINE;
                 echo '<td style="text-align:'.$txtalign.';">&nbsp;<a href="tce_edit_user.php?user_id='.$m['user_id'].'" title="'.$l['w_edit'].'">'.htmlspecialchars($m['user_name'], ENT_NOQUOTES, $l['a_meta_charset']).'</a></td>'.K_NEWLINE;
-                echo '<td style="text-align:'.$txtalign.';">&nbsp;'.htmlspecialchars($m['user_lastname'], ENT_NOQUOTES, $l['a_meta_charset']).'</td>'.K_NEWLINE;
                 echo '<td style="text-align:'.$txtalign.';">&nbsp;'.htmlspecialchars($m['user_firstname'], ENT_NOQUOTES, $l['a_meta_charset']).'</td>'.K_NEWLINE;
+                echo '<td style="text-align:'.$txtalign.';">&nbsp;'.htmlspecialchars($m['user_lastname'], ENT_NOQUOTES, $l['a_meta_charset']).'</td>'.K_NEWLINE;
                 echo '<td style="text-align:'.$txtalign.';">&nbsp;'.htmlspecialchars($m['user_regnumber'], ENT_NOQUOTES, $l['a_meta_charset']).'</td>'.K_NEWLINE;
                 echo '<td>&nbsp;'.$m['user_level'].'</td>'.K_NEWLINE;
                 echo '<td>&nbsp;'.htmlspecialchars($m['user_regdate'], ENT_NOQUOTES, $l['a_meta_charset']).'</td>'.K_NEWLINE;
@@ -232,20 +220,7 @@ function F_show_select_user($order_field, $orderdir, $firstrow, $rowsperpage, $g
     return true;
 }
 
-/**
- * Display user selection XHTML table (popup mode).
- * @author Nicola Asuni
- * @since 2012-04-14
- * @param $order_field (string) Order by column name.
- * @param $orderdir (int) Order direction.
- * @param $firstrow (int) Number of first row to display.
- * @param $rowsperpage (int) Number of rows per page.
- * @param $group_id (int) ID of the group (default = 0 = no specific group selected).
- * @param $andwhere (string) Additional SQL WHERE query conditions.
- * @param $searchterms (string) Search terms.
- * @param string $cid ID of the calling form field.
- * @return false in case of empty database, true otherwise
- */
+
 function F_show_select_user_popup($order_field, $orderdir, $firstrow, $rowsperpage, $group_id = 0, $andwhere = '', $searchterms = '', $cid = 0)
 {
     global $l, $db;
@@ -266,7 +241,7 @@ function F_show_select_user_popup($order_field, $orderdir, $firstrow, $rowsperpa
     $rowsperpage = intval($rowsperpage);
     $group_id = intval($group_id);
     if (empty($order_field) or (!in_array($order_field, array('user_id', 'user_name', 'user_password', 'user_email', 'user_regdate', 'user_ip', 'user_firstname', 'user_lastname', 'user_birthdate', 'user_birthplace', 'user_regnumber', 'user_ssn', 'user_level', 'user_verifycode')))) {
-        $order_field = 'user_lastname,user_firstname';
+        $order_field = 'user_firstname,user_lastname';
     }
     if ($orderdir == 0) {
         $nextorderdir=1;
@@ -320,8 +295,8 @@ function F_show_select_user_popup($order_field, $orderdir, $firstrow, $rowsperpa
                 $filter .= '&amp;searchterms='.urlencode($searchterms);
             }
             echo F_select_table_header_element('user_name', $nextorderdir, $l['h_login_name'], $l['w_user'], $order_field, $filter);
-            echo F_select_table_header_element('user_lastname', $nextorderdir, $l['h_lastname'], $l['w_lastname'], $order_field, $filter);
             echo F_select_table_header_element('user_firstname', $nextorderdir, $l['h_firstname'], $l['w_firstname'], $order_field, $filter);
+            echo F_select_table_header_element('user_lastname', $nextorderdir, $l['h_lastname'], $l['w_lastname'], $order_field, $filter);
             echo F_select_table_header_element('user_email', $nextorderdir, $l['h_email'], $l['w_email'], $order_field, $filter);
             echo F_select_table_header_element('user_regnumber', $nextorderdir, $l['h_regcode'], $l['w_regcode'], $order_field, $filter);
             echo F_select_table_header_element('user_level', $nextorderdir, $l['h_level'], $l['w_level'], $order_field, $filter);
@@ -337,8 +312,8 @@ function F_show_select_user_popup($order_field, $orderdir, $firstrow, $rowsperpa
                 $jsaction .= 'window.close(); return false;';
                 echo '<tr>'.K_NEWLINE;
                 echo '<td style="text-align:'.$txtalign.';">&nbsp;<a href="#" onclick="'.$jsaction.'" title="['.$l['w_select'].']">'.htmlspecialchars($m['user_name'], ENT_NOQUOTES, $l['a_meta_charset']).'</a></td>'.K_NEWLINE;
-                echo '<td style="text-align:'.$txtalign.';">&nbsp;'.htmlspecialchars($m['user_lastname'], ENT_NOQUOTES, $l['a_meta_charset']).'</td>'.K_NEWLINE;
                 echo '<td style="text-align:'.$txtalign.';">&nbsp;'.htmlspecialchars($m['user_firstname'], ENT_NOQUOTES, $l['a_meta_charset']).'</td>'.K_NEWLINE;
+                echo '<td style="text-align:'.$txtalign.';">&nbsp;'.htmlspecialchars($m['user_lastname'], ENT_NOQUOTES, $l['a_meta_charset']).'</td>'.K_NEWLINE;
                 echo '<td style="text-align:'.$txtalign.';">&nbsp;'.htmlspecialchars($m['user_email'], ENT_NOQUOTES, $l['a_meta_charset']).'</td>'.K_NEWLINE;
                 echo '<td style="text-align:'.$txtalign.';">&nbsp;'.htmlspecialchars($m['user_regnumber'], ENT_NOQUOTES, $l['a_meta_charset']).'</td>'.K_NEWLINE;
                 echo '<td>&nbsp;'.$m['user_level'].'</td>'.K_NEWLINE;

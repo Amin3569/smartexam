@@ -68,7 +68,7 @@ header('Content-Type: application/octet-stream', false);
 header('Content-Type: application/download', false);
 header('Content-Type: text/tab-separated-values', false);
 // use the Content-Disposition header to supply a recommended filename
-header('Content-Disposition: attachment; filename=tcexam_test_results_'.$test_id.'_'.date('YmdHis').'.tsv;');
+header('Content-Disposition: attachment; filename=smartexam_test_results_'.$test_id.'_'.date('YmdHis').'.tsv;');
 header('Content-Transfer-Encoding: binary');
 
 // get data

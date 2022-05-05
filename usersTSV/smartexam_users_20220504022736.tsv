@@ -1,0 +1,8 @@
+user_id	user_name	user_password	user_email	user_regdate	user_ip	user_firstname	user_lastname	user_birthdate	user_birthplace	user_regnumber	user_ssn	user_level	user_verifycode	user_otpkey	user_groups
+12	abebe		abebe@gmail.com			Abebe	Ewnetu	12/12/1997	Addis Ababa	15	45	1		88	section 2
+13	debebe		debebe@gmail.com			Debebe	Dabese	10/10/1996	Goba	16	46	1		89	section 2
+14	kebede		kebede@gmail.com			Kebede	Molla	12/12/1997	Fiche	18	47	1		90	section 2
+15	chala		chala@gmail.com			Chala	Chube	11/11/1997	Adama	20	48	1		91	section 2
+16	mamo		mamo@gmail.com			Mamo	Welde	11/12/1997	Raya Azebo	21	49	1		92	section 2
+17	gefersa		gefersa@gmail.com			Gefersa	Haylu	11/13/1997	Welqix	33	50	1		93	section 2
+18	dembelal		dembelal@gmail.com			Dembelal	Kebneh	11/14/1997	Kemise	42	51	1		94	section 2

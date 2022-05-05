@@ -384,7 +384,7 @@ if ($user_id == 0) {
     echo ' selected="selected"';
 }
 echo '>+</option>'.K_NEWLINE;
-$sql = 'SELECT user_id, user_lastname, user_firstname, user_name FROM '.K_TABLE_USERS.' WHERE (user_id>1)';
+$sql = 'SELECT user_id, user_firstname, user_lastname,  user_name FROM '.K_TABLE_USERS.' WHERE (user_id>1)';
 if ($_SESSION['session_user_level'] < K_AUTH_ADMINISTRATOR) {
     // filter for level
     $sql .= ' AND ((user_level<'.$_SESSION['session_user_level'].') OR (user_id='.$_SESSION['session_user_id'].'))';
@@ -395,7 +395,7 @@ if ($_SESSION['session_user_level'] < K_AUTH_ADMINISTRATOR) {
 			AND ta.usrgrp_user_id='.intval($_SESSION['session_user_id']).'
 			AND tb.usrgrp_user_id=user_id)';
 }
-$sql .= ' ORDER BY user_lastname, user_firstname, user_name';
+$sql .= ' ORDER BY user_firstname, user_lastname,  user_name';
 if ($r = F_db_query($sql, $db)) {
     $countitem = 1;
     while ($m = F_db_fetch_array($r)) {
@@ -403,7 +403,7 @@ if ($r = F_db_query($sql, $db)) {
         if ($m['user_id'] == $user_id) {
             echo ' selected="selected"';
         }
-        echo '>'.$countitem.'. '.htmlspecialchars($m['user_lastname'].' '.$m['user_firstname'].' - '.$m['user_name'].'', ENT_NOQUOTES, $l['a_meta_charset']).'</option>'.K_NEWLINE;
+        echo '>'.$countitem.'. '.htmlspecialchars($m['user_firstname'].' '.$m['user_lastname'].' - '.$m['user_name'].'', ENT_NOQUOTES, $l['a_meta_charset']).'</option>'.K_NEWLINE;
         $countitem++;
     }
 } else {

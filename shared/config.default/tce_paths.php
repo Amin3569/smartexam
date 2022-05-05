@@ -1,32 +1,4 @@
 <?php
-//============================================================+
-// File name   : tce_paths.php
-// Begin       : 2002-01-15
-// Last Update : 2021-07-20
-//
-// Description : Configuration file for files and directories
-//               paths.
-//
-// Author: Nicola Asuni
-//
-// (c) Copyright:
-//               Nicola Asuni
-//               Tecnick.com LTD
-//               www.tecnick.com
-//               info@tecnick.com
-//
-// License:
-//    Copyright (C) 2004-2021  Nicola Asuni - Tecnick.com LTD
-//    See LICENSE.TXT file for more information.
-//============================================================+
-
-/**
- * @file
- * Configuration file for files and directories paths.
- * @package com.tecnick.tcexam.shared.cfg
- * @author Nicola Asuni
- * @since 2002-01-15
- */
 
 /**
  * Host URL (e.g.: "http://www.yoursite.com").
@@ -38,9 +10,7 @@ define('K_PATH_HOST', '');
  */
 define('K_PATH_TCEXAM', '');
 
-/**
- * Real full path where this program is installed (e.g: "/var/www/html/TCExam/").
- */
+
 define('K_PATH_MAIN', '');
 
 /**

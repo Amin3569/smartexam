@@ -1,16 +1,18 @@
 
 a {
-	color: #0060BF;
+
+	color: #020202;
 	text-decoration: none;
 }
 
 a:visited {
-	color: #0060BF;
+	
+	color: #000000;
 	text-decoration: none;
 }
 
 a:hover {
-	color: #FF8000;
+	color: #0224e7;
 	text-decoration: underline;
 }
 
@@ -107,20 +109,23 @@ b.tcecode{
 
 blockquote.tcecode{
 }
-
 body {
-	background-color: #f6ffb1;
-	color: #060000;
+	background-image: url(../../images/background.png);
+	background-position: top;
+	background-repeat: no-repeat;
+	background-color: #080808;
+	color: #050404;
 	font-family: Arial,FreeSans,sans-serif;
-	font-size: 120%;
-	margin-bottom: 2px;
-	margin-left: 2px;
+	font-size: 130%;
+	font-style: bold;
+	margin-bottom: 0px;
+	margin-left: 0px;
 	margin-right: 0px;
-	margin-top: 2px;
-	padding-bottom: 2px;
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2px;
+	margin-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
 }
 
 /* BODY (menu + main) ------------ */
@@ -150,10 +155,10 @@ div.container {
 }
 
 div.content {
-	float: left;
+	float: center;
 	margin: 0px 0px 0px 0px;
 	padding: 5px 5px 5px 5px;
-	text-align: left;
+	text-align: center;
 	width: 84%;
 	box-sizing: border-box
 }
@@ -194,9 +199,7 @@ div.header {
 /* header logo ------------ */
 div.header div.left {
 	background-color: #003399;
-	background-image: url(../../images/logo_tcexam_118x25.png);
-	background-position: top;
-	background-repeat: no-repeat;
+	
 	border: 0px none;
 	float: left;
 	height: 25px;
@@ -208,6 +211,7 @@ div.header div.left {
 
 /* header banner ------------ */
 div.header div.right {
+	
 	background-color: #003399;
 	border: 0px none;
 	float: right;
@@ -228,6 +232,7 @@ div.header div.right input{
 }
 
 div.message {
+	
 	background-color: #99CCFF;
 	font-size: 95%;
 	font-weight: bold;
@@ -252,12 +257,14 @@ div.minibutton span.copyright {
 }
 
 div.navlink {
+	
 	font-size: 95%;
 	font-weight: bold;
 }
 
 /* PAGE HELP ------------------------------- */
 div.pagehelp {
+	
 	background-color: #DDEEFF;
 	border: 1px dotted #808080;
 	color: #333333;
@@ -353,11 +360,10 @@ div.tcecodepre{
 /* FORM BOX --------------------- */
 div.tceformbox {
 	overflow: hidden;
-	background-color: #F6F6F6;
-	border: 1px solid #808080;
+	background-color: #eeebeb;
+	border: 1px solid #1a1212;
 	margin: 0px 0px 0px 0px;
 	padding: 5px 5px 5px 5px;
-	text-align: center;
 	width: 100%;
 	box-sizing: border-box
 }
@@ -374,7 +380,7 @@ div.title {
 
 /* USER BAR  ------------------- */
 div.userbar {
-	background-color: #003399;
+	background-color: #1635be;
 	clear: both;
 	color: #FFFFFF;
 	font-size: 95%;
@@ -426,12 +432,14 @@ fieldset.noborder {
 }
 
 h1 {
-	color: #003399;
-	font-size: 140%;
+	background-color: #0e1f6d;
+	color: #ffffff;
+	text-align: center;
+	font-size: 120%;
 	font-weight: bold;
-	margin: 0px 10px 0px 10px;
-	padding: 5px 0px 5px 0px;
-	width: 90%;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	width: 100%;
 }
 
 h2 {
@@ -521,14 +529,14 @@ span.langselector {
 	border: 1px solid #000000;
 	color: #000000;
 	font-family: Arial,FreeSans,sans-serif;
-	font-size: 9px;
+	font-size: 25px;
 	padding: 0px 3px 0px 3px;
 	text-decoration: none;
 	display: block;
 }
 
 span.langselector span.selected {
-	background: #00FF00;
+	background: #c9f509;
 	color: #000000;
 }
 

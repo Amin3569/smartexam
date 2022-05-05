@@ -48,12 +48,7 @@ switch ($output_format) {
     }
 }
 
-/**
- * Export all users to XML grouped by users' groups.
- * @author Nicola Asuni
- * @since 2006-03-17
- * @return XML data
- */
+
 function F_xml_export_users()
 {
     global $l, $db;
@@ -83,7 +78,7 @@ function F_xml_export_users()
 				AND ta.usrgrp_user_id='.intval($_SESSION['session_user_id']).'
 				AND tb.usrgrp_user_id=user_id)';
     }
-    $sqla .= ' ORDER BY user_lastname,user_firstname,user_name';
+    $sqla .= ' ORDER BY user_firstname,user_lastname,user_name';
     if ($ra = F_db_query($sqla, $db)) {
         while ($ma = F_db_fetch_array($ra)) {
             $xml .= K_TAB.K_TAB.K_TAB.'<user id="'.$ma['user_id'].'">'.K_NEWLINE;

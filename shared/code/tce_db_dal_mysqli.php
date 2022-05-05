@@ -1,23 +1,7 @@
 <?php
 
-/**
- * @file
- * MySQL driver for TCExam Database Abstraction Layer (DAL).
- * This abstraction layer uses the same SQL syntax of MySQL.
- * @package com.tecnick.tcexam.shared
- * @author Nicola Asuni
- * @since 2003-10-12
- */
 
-/**
- * Open a connection to a MySQL Server and select a database.
- * @param $host (string) database server host name.
- * @param $port (string) database connection port
- * @param $username (string) Name of the user that owns the server process.
- * @param $password (string) Password of the user that owns the server process.
- * @param $database (string) Database name.
- * @return MySQL link identifier on success, or FALSE on failure.
- */
+
 function F_db_connect($host = 'localhost', $port = '3306', $username = 'root', $password = '', $database = '')
 {
     if (!$db = @mysqli_connect($host, $username, $password, $database, $port)) {

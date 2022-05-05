@@ -96,7 +96,7 @@ if (isset($_POST['lock'])) {
 if (isset($_REQUEST['order_field']) and !empty($_REQUEST['order_field']) and (in_array($_REQUEST['order_field'], array('testuser_creation_time', 'testuser_end_time', 'user_name', 'user_lastname', 'user_firstname', 'total_score', 'testuser_test_id')))) {
     $order_field = $_REQUEST['order_field'];
 } else {
-    $order_field = 'total_score, user_lastname, user_firstname';
+    $order_field = 'total_score,user_firstname, user_lastname';
 }
 $filter .= '&amp;order_field='.urlencode($order_field).'';
 if (!isset($_REQUEST['orderdir']) or empty($_REQUEST['orderdir'])) {
@@ -261,7 +261,7 @@ echo '</span>'.K_NEWLINE;
 echo '<span class="formw">'.K_NEWLINE;
 //echo '<select name="user_id" id="user_id" size="0" onchange="document.getElementById(\'form_resultallusers\').submit()">'.K_NEWLINE;
 echo '<select name="user_id" id="user_id" size="0">'.K_NEWLINE;
-$sql = 'SELECT user_id, user_lastname, user_firstname, user_name FROM '.K_TABLE_USERS.'';
+$sql = 'SELECT user_id, user_firstname, user_lastname,  user_name FROM '.K_TABLE_USERS.'';
 if ($test_id > 0) {
     $sql .= ', '.K_TABLE_TEST_USER.' WHERE testuser_user_id=user_id AND testuser_test_id='.$test_id.'';
 } elseif ($group_id > 0) {
@@ -269,7 +269,7 @@ if ($test_id > 0) {
 } else {
     $sql .= ' WHERE user_id>1';
 }
-$sql .= ' GROUP BY user_id, user_lastname, user_firstname, user_name ORDER BY user_lastname, user_firstname, user_name';
+$sql .= ' GROUP BY user_id, user_firstname, user_lastname,  user_name ORDER BY user_firstname, user_lastname,  user_name';
 if ($r = F_db_query($sql, $db)) {
     $countitem = 1;
     echo '<option value="0"';
@@ -282,7 +282,7 @@ if ($r = F_db_query($sql, $db)) {
         if ($m['user_id'] == $user_id) {
             echo ' selected="selected"';
         }
-        echo '>'.$countitem.'. '.htmlspecialchars($m['user_lastname'].' '.$m['user_firstname'].' - '.$m['user_name'].'', ENT_NOQUOTES, $l['a_meta_charset']).'</option>'.K_NEWLINE;
+        echo '>'.$countitem.'. '.htmlspecialchars($m['user_firstname'].' '.$m['user_lastname'].' - '.$m['user_name'].'', ENT_NOQUOTES, $l['a_meta_charset']).'</option>'.K_NEWLINE;
         $countitem++;
     }
 } else {

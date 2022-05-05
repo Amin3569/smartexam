@@ -1,5 +1,5 @@
 {
-    "name": "tecnickcom/tcpdf",
+    "name": "smartexam/tcpdf",
     "type": "library",
     "description": "TCPDF is a PHP class for generating PDF documents and barcodes.",
     "keywords": [
@@ -16,8 +16,8 @@
     "license": "LGPL-3.0-only",
     "authors": [
         {
-            "name": "Nicola Asuni",
-            "email": "info@tecnick.com",
+            "name": "Amin Beshir",
+            "email": "aminbeshir265@gmail.com",
             "role": "lead"
         }
     ],

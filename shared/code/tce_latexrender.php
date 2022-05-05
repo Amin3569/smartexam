@@ -3,18 +3,7 @@
 // Includes configuration file.
 require_once('../../shared/config/tce_latex.php');
 
-/**
- * @class LatexRender
- * This is a PHP5 class for generating images from LaTeX Formulas.
- * This class is based on the following:
- * LaTeX Rendering Class v0.8 (Licensed under GPL 2)
- * Copyright (C) 2003 Benjamin Zeiss <zeiss@math.uni-goettingen.de>
- * Currently the project is maintained by Steve Mayer.
- * Please check the following Website to obtain the original
- * source code: http://www.mayer.dial.pipex.com/tex.htm
- * @package com.tecnick.tcexam.shared
- * @authors Benjamin Zeiss, Nicola Asuni
- */
+
 class LatexRender
 {
 

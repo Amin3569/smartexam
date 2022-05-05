@@ -309,20 +309,7 @@ require_once('../code/tce_page_footer.php');
 
 // ------------------------------
 
-/**
- * Display a list of selected questions.
- * @author Nicola Asuni
- * @since 2005-07-06
- * @param $wherequery (string) question selection query
- * @param $subject_module_id (string) module ID
- * @param $subject_id (string) topic ID
- * @param $order_field (string) order by column name
- * @param $orderdir (int) oreder direction
- * @param $firstrow (int) number of first row to display
- * @param $rowsperpage (int) number of rows per page
- * @param $hide_answers (boolean) if true hide answers
- * @return false in case of empty database, true otherwise
- */
+
 function F_show_select_questions($wherequery, $subject_module_id, $subject_id, $order_field, $orderdir, $firstrow, $rowsperpage, $hide_answers = false)
 {
     global $l, $db;

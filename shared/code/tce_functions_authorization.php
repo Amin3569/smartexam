@@ -1,21 +1,6 @@
 <?php
 
-/**
- * Returns XHTML / CSS formatted string for login form.<br>
- * The CSS classes used are:
- * <ul>
- * <li>div.login_form : container for login box</li>
- * <li>div.login_form div.login_row : container for label + input field or button</li>
- * <li>div.login_form div.login_row span.label : container for input label</li>
- * <li>div.login_form div.login_row span.formw : container for input form</li>
- * </ul>
- * @param faction String action attribute
- * @param fid String form ID attribute
- * @param fmethod String method attribute (get/post)
- * @param fenctype String enctype attribute
- * @param username String user name
- * @return XHTML string for login form
- */
+
 function F_loginForm($faction, $fid, $fmethod, $fenctype, $username)
 {
     global $l;
@@ -70,7 +55,7 @@ function F_login_form()
     require_once('../../shared/config/tce_httpbasic.php');
     if (K_HTTPBASIC_ENABLED and (!isset($_SESSION['logout']) or !$_SESSION['logout'])) {
         // force HTTP Basic Authentication
-        header('WWW-Authenticate: Basic realm="TCExam"');
+        header('WWW-Authenticate: Basic realm="SmartExam"');
         header('HTTP/1.0 401 Unauthorized');
         require_once('../code/tce_page_header.php');
         F_print_error('WARNING', $l['m_authorization_denied']);
@@ -150,16 +135,7 @@ function F_logout_page()
     exit();
 }
 
-/**
- * Returns true if the current user is authorized to update and delete the selected database record.
- * @author Nicola Asuni
- * @since 2006-03-11
- * @param $table (string) table to be modified
- * @param $field_id_name (string) name of the main ID field of the table
- * @param $value_id (int) value of the ID field of the table
- * @param $field_user_id (string) name of the foreign key to to user_id
- * @return boolean true if the user is authorized, false otherwise
- */
+
 function F_isAuthorizedUser($table, $field_id_name, $value_id, $field_user_id)
 {
     global $l,$db;
@@ -199,13 +175,7 @@ function F_isAuthorizedUser($table, $field_id_name, $value_id, $field_user_id)
     return false;
 }
 
-/**
- * Returns a comma separated string of ID of the users that belong to the same groups.
- * @author Nicola Asuni
- * @since 2006-03-11
- * @param $user_id (int) user ID
- * @return string
- */
+
 function F_getAuthorizedUsers($user_id)
 {
     global $l,$db;
@@ -228,13 +198,7 @@ function F_getAuthorizedUsers($user_id)
     return $str;
 }
 
-/**
- * Sync user groups with the ones specified on the configuration file for alternate authentication.
- * @param $usrid (int) ID of the user to update.
- * @param $grpids (mixed) Group ID or comma separated list of group IDs (0=all available groups).
- * @author Nicola Asuni
- * @since 2012-09-11
- */
+
 function F_syncUserGroups($usrid, $grpids)
 {
     global $l,$db;
@@ -294,12 +258,7 @@ function F_syncUserGroups($usrid, $grpids)
     }
 }
 
-/**
- * Check if the client has a valid SSL certificate.
- * @return true if the client has a valid SSL certificate, false otherwise.
- * @author Nicola Asuni
- * @since 2013-03-26
- */
+
 function F_isSslCertificateValid()
 {
     if (!isset($_SERVER['SSL_CLIENT_M_SERIAL']) // The serial of the client certificate
@@ -316,14 +275,7 @@ function F_isSslCertificateValid()
     return true;
 }
 
-/**
- * Get the hash code of the specified SSL certificate
- * @param string $cert String containing the certificate data.
- * @param boolean $pkcs12 Set this variable to true if the certificate is in PKCS12 format.
- * @return array containing the hash code and the validity end date in unix epoch.
- * @author Nicola Asuni
- * @since 2013-07-01
- */
+
 function F_getSSLCertificateHash($cert, $pkcs12 = false)
 {
     if ($pkcs12) {
@@ -355,12 +307,7 @@ function F_getSSLCertificateHash($cert, $pkcs12 = false)
     return array(md5($sslhash), date(K_TIMESTAMP_FORMAT, $endtime));
 }
 
-/**
- * Get the hash code for the client certificate
- * @return string containing the hash code.
- * @author Nicola Asuni
- * @since 2013-07-01
- */
+
 function F_getSSLClientHash()
 {
     $crthash = '';

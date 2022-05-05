@@ -13,14 +13,7 @@ function F_is_allowed_upload($filename)
     return false;
 }
 
-/**
- * Uploads image file to the server.
- * @author Nicola Asuni
- * @since 2010-06-12
- * @param $fieldname (string) form field name containing the source file path
- * @param $uploaddir (string) upload directory
- * @return mixed file name or false in case of error
- */
+
 function F_upload_file($fieldname, $uploaddir)
 {
     global $l;
@@ -41,13 +34,6 @@ function F_upload_file($fieldname, $uploaddir)
     return false;
 }
 
-/**
- * returns the file size in bytes
- * @author Nicola Asuni
- * @since 2001-11-19
- * @param $filetocheck (string) file to check (local path or URL)
- * @return mixed file size in bytes or false in case of error
- */
 function F_read_file_size($filetocheck)
 {
     global $l;

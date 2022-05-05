@@ -220,9 +220,9 @@ if (isset($_POST['logaction']) and ($_POST['logaction'] == 'login') and isset($_
                         F_print_error('WARNING', $l['m_login_wrong']);
                     }
                 } else {
-                    // this user do not exist on TCExam database
+                    // this user do not exist on SmartExam database
                     if ($altusr !== false) {
-                        // replicate external user account on TCExam local database
+                        // replicate external user account on SmartExam local database
                         $sql = 'INSERT INTO '.K_TABLE_USERS.' (
 							user_regdate,
 							user_ip,

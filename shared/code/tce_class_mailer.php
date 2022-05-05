@@ -1,16 +1,6 @@
 <?php
 
-/**
- * @file
- * PHPMailer class extension.
- * @package PHPMailer
- * @brief PHP email transport class
- * @author Nicola Asuni
- * @since 2005-02-24
- */
 
-/**
- */
 
 require_once('../config/tce_config.php');
 
@@ -24,13 +14,7 @@ require_once('../../shared/config/tce_email_config.php'); // Include default pub
 require_once('../../shared/phpmailer/src/autoload.php');
 require_once('../../shared/phpmailer/src/PHPMailer.php');
 
-/**
- * @class C_mailer
- * PHPMailer class extension.
- * @author Nicola Asuni
- * @package PHPMailer
- * @since 2005-02-24
- */
+
 class C_mailer extends PHPMailer\PHPMailer\PHPMailer
 {
     /**

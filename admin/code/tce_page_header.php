@@ -1,14 +1,6 @@
 <?php
 require_once('tce_xhtml_header.php');
 
-// display header (image logo + timer)
-echo '<div class="header">'.K_NEWLINE;
-echo '<div class="left"></div>'.K_NEWLINE;
-echo '<div class="right">'.K_NEWLINE;
-echo '<a name="timersection" id="timersection"></a>'.K_NEWLINE;
-include('../../shared/code/tce_page_timer.php');
-echo '</div>'.K_NEWLINE;
-echo '</div>'.K_NEWLINE;
 
 // display menu
 echo '<div id="scrollayer" class="scrollmenu">'.K_NEWLINE;
@@ -22,6 +14,9 @@ echo 'ul.menu ul ul {display:none;position:absolute;top:0px;left:190px;}'.K_NEWL
 echo '</style>'.K_NEWLINE;
 echo '<![endif]-->'.K_NEWLINE;
 require_once(dirname(__FILE__).'/tce_page_menu.php');
+echo '<a name="timersection" id="timersection"></a>'.K_NEWLINE;
+include('../../shared/code/tce_page_timer.php');
+
 echo '</div>'.K_NEWLINE;
 
 echo '<div class="body">'.K_NEWLINE;

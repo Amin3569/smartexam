@@ -18,7 +18,7 @@ if (isset($new_group_id)) {
     $new_group_id = 0;
 }
 if (!isset($order_field)) {
-    $order_field='user_lastname,user_firstname';
+    $order_field='user_firstname,user_lastname';
 }
 if (!isset($orderdir)) {
     $orderdir=0;

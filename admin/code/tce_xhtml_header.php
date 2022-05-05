@@ -40,8 +40,8 @@ echo '<meta name="viewport" content="width=device-width, initial-scale=1">'.K_NE
 echo '<meta http-equiv="Content-Type" content="text/html; charset='.$l['a_meta_charset'].'" />'.K_NEWLINE;
 echo '<meta name="language" content="'.$l['a_meta_language'].'" />'.K_NEWLINE;
 echo '<meta name="smartexam_level" content="'.$pagelevel.'" />'.K_NEWLINE;
-echo '<meta name="description" content="'.htmlspecialchars($thispage_description, ENT_COMPAT, $l['a_meta_charset']).' ['.base64_decode(K_KEY_SECURITY).']" />'.K_NEWLINE;
-echo '<meta name="author" content="nick"/>'.K_NEWLINE;
+echo '<meta name="description" content="A highly flexible online examination system for Ethiopian schools and institutions developed by Adama science and Technology University Graduate students in 2022 e.c" />'.K_NEWLINE;
+echo '<meta name="author" content="Amin,Linda,Ashenafi,Afework and Mengestu"/>'.K_NEWLINE;
 echo '<meta name="reply-to" content="'.htmlspecialchars($thispage_reply, ENT_COMPAT, $l['a_meta_charset']).'" />'.K_NEWLINE;
 echo '<meta name="keywords" content="'.htmlspecialchars($thispage_keywords, ENT_COMPAT, $l['a_meta_charset']).'" />'.K_NEWLINE;
 echo '<link rel="stylesheet" href="'.$thispage_style.'" type="text/css" />'.K_NEWLINE;
@@ -57,7 +57,7 @@ if (isset($enable_calendar) and $enable_calendar) {
     }
     echo '<script type="text/javascript" src="'.K_PATH_SHARED_JSCRIPTS.'jscalendar/calendar-setup.js"></script>'.K_NEWLINE;
 }
-echo '<!-- T'.'CE'.'x'.'am1'.'97'.'30'.'10'.'4 -->'.K_NEWLINE;
+echo '<!-- Smart'.'Exam-->'.K_NEWLINE;
 echo '</head>'.K_NEWLINE;
 
 echo '<body>'.K_NEWLINE;

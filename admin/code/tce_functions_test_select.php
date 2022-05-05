@@ -8,17 +8,7 @@ function F_select_test($order_field, $orderdir, $firstrow, $rowsperpage, $andwhe
     return true;
 }
 
-/**
- * Display test selection XHTML table.
- * @author Nicola Asuni
- * @param $order_field (string) Order by column name.
- * @param $orderdir (int) Order direction.
- * @param $firstrow (int) Number of first row to display.
- * @param $rowsperpage (int) Number of rows per page.
- * @param $andwhere (string) Additional SQL WHERE query conditions.
- * @param $searchterms (string) Search terms.
- * @return false in case of empty database, true otherwise
- */
+
 function F_show_select_test($order_field, $orderdir, $firstrow, $rowsperpage, $andwhere = '', $searchterms = '')
 {
     global $l, $db;
@@ -161,19 +151,7 @@ function F_show_select_test($order_field, $orderdir, $firstrow, $rowsperpage, $a
     return true;
 }
 
-/**
- * Display user selection XHTML table (popup mode).
- * @author Nicola Asuni
- * @since 2012-04-14
- * @param $order_field (string) Order by column name.
- * @param $orderdir (int) Order direction.
- * @param $firstrow (int) Number of first row to display.
- * @param $rowsperpage (int) Number of rows per page.
- * @param $andwhere (string) Additional SQL WHERE query conditions.
- * @param $searchterms (string) Search terms.
- * @param string $cid ID of the calling form field.
- * @return false in case of empty database, true otherwise
- */
+
 function F_show_select_test_popup($order_field, $orderdir, $firstrow, $rowsperpage, $andwhere = '', $searchterms = '', $cid = 0)
 {
     global $l, $db;

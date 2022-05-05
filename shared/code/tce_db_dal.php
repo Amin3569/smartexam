@@ -1,17 +1,6 @@
 <?php
 
-/**
- * @file
- * Database Abstraction layer (DAL).
- * Loads the Database functions for the selected DATABASE type.
- * The database type is defined by K_DATABASE_TYPE constant on /shared/config/tce_db_config.php configuration file.
- * @package com.tecnick.tcexam.shared
- * @author Nicola Asuni
- * @since 2003-10-12
- */
 
-/**
- */
 
 switch (K_DATABASE_TYPE) {
     case 'MYSQL': {

@@ -810,7 +810,7 @@ $pdf->SetXY(15, $pdf->getPageHeight(), true);
 $pdf->Cell(0, 0, $msg, 0, 0, 'R', 0, $lnk, 0, false, 'B', 'B');
 
 // close and outputs PDF document
-$pdf->Output('tcexam_test_'.$test_id.'_'.date('YmdHis').'.pdf', 'D');
+$pdf->Output('smartexam_test_'.$test_id.'_'.date('YmdHis').'.pdf', 'D');
 
 //============================================================+
 // END OF FILE

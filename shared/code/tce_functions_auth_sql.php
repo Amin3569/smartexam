@@ -1,13 +1,7 @@
 <?php
 
 
-/**
- * Returns a SQL string to select modules accounting for user authorizations.
- * @author Nicola Asuni
- * @since 2010-06-16
- * @param $andwhere (string) additional WHERE statements (e.g.: "module_enabled='1'")
- * @return string sql statement
- */
+
 function F_select_modules_sql($andwhere = '')
 {
     global $l;
@@ -27,25 +21,12 @@ function F_select_modules_sql($andwhere = '')
     return $sql;
 }
 
-/**
- * Returns a SQL string to select subjects accounting for user authorizations.
- * @author Nicola Asuni
- * @since 2006-03-12
- * @param $andwhere (string) additional WHERE statements (e.g.: "subject_enabled='1'")
- * @return string sql statement
- */
+
 function F_select_subjects_sql($andwhere = '')
 {
     return F_select_module_subjects_sql($andwhere);
 }
 
-/**
- * Returns a SQL string to select modules and subjects accounting for user authorizations.
- * @author Nicola Asuni
- * @since 2008-11-28
- * @param $andwhere (string) additional WHERE statements (e.g.: "subject_enabled='1'")
- * @return string sql statement
- */
 function F_select_module_subjects_sql($andwhere = '')
 {
     global $l;
@@ -63,12 +44,7 @@ function F_select_module_subjects_sql($andwhere = '')
     return $sql;
 }
 
-/**
- * Returns a SQL string to select tests accounting for user authorizations.
- * @author Nicola Asuni
- * @since 2006-03-12
- * @return string sql statement
- */
+
 function F_select_tests_sql()
 {
     global $l;
@@ -81,12 +57,7 @@ function F_select_tests_sql()
     return $sql;
 }
 
-/**
- * Returns a SQL string to select executed tests accounting for user authorizations.
- * @author Nicola Asuni
- * @since 2006-06-26
- * @return string sql statement
- */
+
 function F_select_executed_tests_sql()
 {
     global $l;

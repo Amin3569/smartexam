@@ -57,13 +57,13 @@ switch ($menu_mode) { // process submitted data
                 // create a backup of the current database data
                 switch (K_DATABASE_TYPE) {
                     case 'POSTGRESQL': {
-                        $filename = K_PATH_BACKUP.date('YmdHis').'_tcexam_backup.tar';
+                        $filename = K_PATH_BACKUP.date('YmdHis').'_smart_backup.tar';
                         $command = 'export PGUSER="'.addslashes(K_DATABASE_USER_NAME).'"; export PGPASSWORD="'.addslashes(K_DATABASE_USER_PASSWORD).'"; pg_dump -h'.K_DATABASE_HOST.' -p'.K_DATABASE_PORT.'  -U'.K_DATABASE_USER_NAME.' -Ft '.K_DATABASE_NAME.' | gzip > '.$filename.'.gz';
                         break;
                     }
                     case 'MYSQL':
                     default: {
-                        $filename = K_PATH_BACKUP.date('YmdHis').'_tcexam_backup.sql';
+                        $filename = K_PATH_BACKUP.date('YmdHis').'_smart_backup.sql';
                         $command = 'mysqldump --opt -h'.K_DATABASE_HOST.' -P'.K_DATABASE_PORT.' -u'.K_DATABASE_USER_NAME.' -p'.K_DATABASE_USER_PASSWORD.' '.K_DATABASE_NAME.' | gzip > '.$filename.'.gz';
                         break;
                     }
@@ -107,13 +107,13 @@ switch ($menu_mode) { // process submitted data
     case 'backup':{ // backup
         switch (K_DATABASE_TYPE) {
             case 'POSTGRESQL': {
-                $filename = K_PATH_BACKUP.date('YmdHis').'_tcexam_backup.tar';
+                $filename = K_PATH_BACKUP.date('YmdHis').'_smartexam_backup.tar';
                 $command = 'export PGUSER="'.addslashes(K_DATABASE_USER_NAME).'"; export PGPASSWORD="'.addslashes(K_DATABASE_USER_PASSWORD).'"; pg_dump -h'.K_DATABASE_HOST.' -p'.K_DATABASE_PORT.' -U'.K_DATABASE_USER_NAME.' -Ft '.K_DATABASE_NAME.' | gzip > '.$filename.'.gz';
                 break;
             }
             case 'MYSQL':
             default: {
-                $filename = K_PATH_BACKUP.date('YmdHis').'_tcexam_backup.sql';
+                $filename = K_PATH_BACKUP.date('YmdHis').'_smart_backup.sql';
                 $command = 'mysqldump --opt -h'.K_DATABASE_HOST.' -P'.K_DATABASE_PORT.' -u'.K_DATABASE_USER_NAME.' -p'.K_DATABASE_USER_PASSWORD.' '.K_DATABASE_NAME.' | gzip > '.$filename.'.gz';
                 break;
             }

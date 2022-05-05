@@ -1,12 +1,6 @@
 <?php
 
-/**
- * Replace angular parenthesis with html equivalents (html entities).
- * @param $p (string) String containing point data.
- * @param $w (int) Graph width.
- * @param $h (int) Graph height.
- * @return converted string
- */
+
 function F_getSVGGraphCode($p, $w = '', $h = '')
 {
 

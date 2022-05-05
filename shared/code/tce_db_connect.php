@@ -1,15 +1,6 @@
 <?php
 
-/**
- * @file
- * Open a connection to a MySQL Server and select a database.
- * @package com.tecnick.tcexam.shared
- * @author Nicola Asuni
- * @since 2001-09-02
- */
 
-/**
- */
 
 require_once('../../shared/code/tce_db_dal.php'); // Database Abstraction Layer for selected DATABASE type
 

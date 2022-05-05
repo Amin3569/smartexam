@@ -13,13 +13,7 @@ function F_question_set_enabled($question_id, $enabled = true)
     }
 }
 
-/**
- * Get question position
- * @author Nicola Asuni
- * @since 2008-11-26
- * @param $question_id (int) question ID
- * @return int question position
- */
+
 function F_question_get_position($question_id)
 {
     global $l, $db;
@@ -40,13 +34,7 @@ function F_question_get_position($question_id)
     return $question_position;
 }
 
-/**
- * Get question data
- * @author Nicola Asuni
- * @since 2008-11-26
- * @param $question_id (int) question ID
- * @return array containing selected question data, false in case of error
- */
+
 function F_question_get_data($question_id)
 {
     global $l, $db;
@@ -67,13 +55,6 @@ function F_question_get_data($question_id)
     return false;
 }
 
-/**
- * Delete selected question (or disable it if used)
- * @author Nicola Asuni
- * @since 2008-11-26
- * @param $question_id (int) question ID
- * @param $subject_id (int) subject ID
- */
 function F_question_delete($question_id, $subject_id)
 {
     global $l, $db;
@@ -115,13 +96,7 @@ function F_question_delete($question_id, $subject_id)
     }
 }
 
-/**
- * Copy selected question to another topic
- * @author Nicola Asuni
- * @since 2008-11-26
- * @param $question_id (int) question ID
- * @param $new_subject_id (int) new subject ID
- */
+
 function F_question_copy($question_id, $new_subject_id)
 {
     global $l, $db;

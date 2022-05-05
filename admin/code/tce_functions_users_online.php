@@ -8,17 +8,7 @@ function F_show_online_users($wherequery, $order_field, $orderdir, $firstrow, $r
     return true;
 }
 
-/**
- * Display online users.
- * @author Nicola Asuni
- * @since 2001-10-18
- * @param $wherequery (string) users selection query
- * @param $order_field (string) order by column name
- * @param $orderdir (int) oreder direction
- * @param $firstrow (int) number of first row to display
- * @param $rowsperpage (int) number of rows per page
- * @return false in case of empty database, true otherwise
- */
+
 function F_list_online_users($wherequery, $order_field, $orderdir, $firstrow, $rowsperpage)
 {
     global $l, $db;

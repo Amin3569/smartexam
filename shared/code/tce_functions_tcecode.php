@@ -1,10 +1,6 @@
 <?php
 
-/**
- * Returns XHTML code from text marked-up with TCExam Code Tags
- * @param $text_to_decode (string) text to convert
- * @return string XHTML code
- */
+
 function F_decode_tcecode($text_to_decode)
 {
     require_once('../config/tce_config.php');

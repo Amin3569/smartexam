@@ -40,8 +40,8 @@ echo '<meta name="viewport" content="width=device-width, initial-scale=1">'.K_NE
 echo '<meta http-equiv="Content-Type" content="text/html; charset='.$l['a_meta_charset'].'" />'.K_NEWLINE;
 echo '<meta name="language" content="'.$l['a_meta_language'].'" />'.K_NEWLINE;
 echo '<meta name="smartexam_level" content="'.$pagelevel.'" />'.K_NEWLINE;
-echo '<meta name="description" content="'."\x5b\x54\x43\x45\x78\x61\x6d\x5d".' '.htmlspecialchars($thispage_description, ENT_COMPAT, $l['a_meta_charset']).' ['.base64_decode(K_KEY_SECURITY).']" />'.K_NEWLINE;
-echo '<meta name="author" content="nick"/>'.K_NEWLINE;
+echo '<meta name="description" content="smart online examination system developed in AdamaScience and Technology University, with the following students" />'.K_NEWLINE;
+echo '<meta name="author" content="AminBeshir,LindaAshebir,AshenafiGirma,AfeworkAdane,MengestuAraya"/>'.K_NEWLINE;
 echo '<meta name="reply-to" content="'.htmlspecialchars($thispage_reply, ENT_COMPAT, $l['a_meta_charset']).'" />'.K_NEWLINE;
 echo '<meta name="keywords" content="'.htmlspecialchars($thispage_keywords, ENT_COMPAT, $l['a_meta_charset']).'" />'.K_NEWLINE;
 echo '<link rel="stylesheet" href="'.$thispage_style.'" type="text/css" />'.K_NEWLINE;
@@ -57,7 +57,7 @@ if (isset($enable_calendar) and $enable_calendar) {
     }
     echo '<script type="text/javascript" src="'.K_PATH_SHARED_JSCRIPTS.'jscalendar/calendar-setup.js"></script>'.K_NEWLINE;
 }
-echo '<!-- '.'S'.'M'.'A'.'R'.'T'.'e'.'x'.'a'.'m'.'01'.' -->'.K_NEWLINE;
+echo '<!-- '.'S'.'M'.'A'.'R'.'T'.'e'.'x'.'a'.'m' .'-->'.K_NEWLINE;
 echo '</head>'.K_NEWLINE;
 
 echo '<body>'.K_NEWLINE;

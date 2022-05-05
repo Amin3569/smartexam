@@ -63,13 +63,7 @@ if (isset($_REQUEST['testid']) and ($_REQUEST['testid'] > 0)) {
     exit;
 }
 
-/**
- * Export all question statistics of the selected test to XML.
- * @author Nicola Asuni
- * @since 2010-05-10
- * @param $test_id (int) test ID
- * @return XML data
- */
+
 function F_xml_export_question_stats($test_id)
 {
     global $l, $db;

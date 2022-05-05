@@ -133,13 +133,7 @@ function F_session_gc()
     return F_db_affected_rows($db, $r);
 }
 
-/**
- * Convert encoded session string data to array.
- * @author Nicola Asuni
- * @since 2001-10-18
- * @param $sd (string) input data string
- * @return array
- */
+
 function F_session_string_to_array($sd)
 {
     $sess_array = array();
@@ -153,12 +147,7 @@ function F_session_string_to_array($sd)
     return $sess_array;
 }
 
-/**
- * Generate a client fingerprint (unique ID for the client browser)
- * @author Nicola Asuni
- * @since 2010-10-04
- * @return string client ID
- */
+
 function getClientFingerprint()
 {
     $sid = K_RANDOM_SECURITY;
@@ -183,12 +172,7 @@ function getClientFingerprint()
     return md5($sid);
 }
 
-/**
- * Generate and return a new session ID.
- * @author Nicola Asuni
- * @since 2010-10-04
- * @return string PHPSESSID
- */
+
 function getNewSessionID()
 {
     return md5(getPasswordHash(uniqid(microtime().getClientFingerprint().K_RANDOM_SECURITY.session_id(), true)));

@@ -18,13 +18,7 @@ function F_deleteMediaFile($filename)
     return false;
 }
 
-/**
- * Rename the selected media file
- * @author Nicola Asuni
- * @param $filename (string) old file name
- * @param $newname (string) new file name
- * @return true in case of success, false otherwise
- */
+
 function F_renameMediaFile($filename, $newname)
 {
     require_once('../config/tce_config.php');
@@ -48,12 +42,7 @@ function F_renameMediaFile($filename, $newname)
     return false;
 }
 
-/**
- * Create a new media directory inside the cache
- * @author Nicola Asuni
- * @param $dirname (string) the directory name
- * @return true in case of success, false otherwise
- */
+
 function F_createMediaDir($dirname)
 {
     require_once('../config/tce_config.php');
@@ -70,12 +59,7 @@ function F_createMediaDir($dirname)
     return false;
 }
 
-/**
- * Delete the specified media directory
- * @author Nicola Asuni
- * @param $dirname (string) the directory name
- * @return true in case of success, false otherwise
- */
+
 function F_deleteMediaDir($dirname)
 {
     require_once('../config/tce_config.php');
@@ -89,12 +73,7 @@ function F_deleteMediaDir($dirname)
     return false;
 }
 
-/**
- * Get file information
- * @author Nicola Asuni
- * @param $file (string) the file name
- * @return associative array containing file info or false in case of error
- */
+
 function F_getFileInfo($file)
 {
     require_once('../config/tce_config.php');
@@ -130,12 +109,7 @@ function F_getFileInfo($file)
     return $info;
 }
 
-/**
- * Return a formatted file size
- * @author Nicola Asuni
- * @param $size (int) size in bytes
- * @return string formatted size
- */
+
 function F_formatFileSize($size)
 {
     $out = ''; // string to be returned
@@ -150,13 +124,7 @@ function F_formatFileSize($size)
     return $out;
 }
 
-/**
- * Get an html string containing active path of the specified directory with links to subdirectories.
- * @author Nicola Asuni
- * @param $dirpath (string) the directory path
- * @param $viewmode (boolean) true=table, false=visual
- * @return an html string
- */
+
 function F_getMediaDirPathLink($dirpath, $viewmode = true)
 {
     global $l, $db;
@@ -181,14 +149,7 @@ function F_getMediaDirPathLink($dirpath, $viewmode = true)
     return $out;
 }
 
-/**
- * Get an associative array of directories and folder inside the specified dir.
- * @author Nicola Asuni
- * @param $dir (string) the starting directory path
- * @param $rootdir (string) the user root dir.
- * @param $authdirs (string) regular expression containing the authorized dirs.
- * @return an associative array containing sorted 'dirs' and 'files'
- */
+
 function F_getDirFiles($dir, $rootdir = K_PATH_CACHE, $authdirs = '')
 {
     $data['dirs'] = array();
@@ -218,12 +179,7 @@ function F_getDirFiles($dir, $rootdir = K_PATH_CACHE, $authdirs = '')
     return $data;
 }
 
-/**
- * Return true if the file is used on question or answer descriptions
- * @author Nicola Asuni
- * @param $file (string) the file to search
- * @return true if the file is used, false otherwise
- */
+
 function F_isUsedMediaFile($file)
 {
     global $l, $db;
@@ -251,16 +207,7 @@ function F_isUsedMediaFile($file)
     return false;
 }
 
-/**
- * Get an html table containing files and subdirs
- * @author Nicola Asuni
- * @param $dir (string) the starting directory path
- * @param $selected (string) the selected file
- * @param $params (string) additional parameters to add on links
- * @param $rootdir (string) the user root dir.
- * @param $authdirs (string) regular expression containing the authorized dirs.
- * @return html table
- */
+
 function F_getDirTable($dir, $selected = '', $params = '', $rootdir = K_PATH_CACHE, $authdirs = '')
 {
     global $l;
@@ -315,16 +262,7 @@ function F_getDirTable($dir, $selected = '', $params = '', $rootdir = K_PATH_CAC
     return $out;
 }
 
-/**
- * Get an html visual list of files and subdirs
- * @author Nicola Asuni
- * @param $dir (string) the starting directory path
- * @param $selected (string) the selected file
- * @param $params (string) additional parameters to add on links
- * @param $rootdir (string) the user root dir.
- * @param $authdirs (string) regular expression containing the authorized dirs.
- * @return html table
- */
+
 function F_getDirVisualTable($dir, $selected = '', $params = '', $rootdir = K_PATH_CACHE, $authdirs = '')
 {
     global $l;

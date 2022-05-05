@@ -62,7 +62,7 @@ function F_send_user_reg_email($user_id, $user_email, $user_verifycode)
     $mail->Body = str_replace('#EMAIL#', $user_email, $mail->Body);
     $mail->Body = str_replace('#USERIP#', $_SERVER['REMOTE_ADDR'], $mail->Body);
     $mail->Body = str_replace('#SUBSCRIBEURL#', $subscribe_url, $mail->Body);
-    $mail->Body = str_replace('#TCEXAMURL#', K_PATH_HOST.K_PATH_TCEXAM, $mail->Body);
+    $mail->Body = str_replace('#', K_PATH_HOST.K_PATH_TCEXAM, $mail->Body);
 
     //compose alternative TEXT message body
     $mail->AltBody = F_html_to_text($mail->Body, false, true);

@@ -5,7 +5,7 @@ $pagelevel = K_AUTH_INDEX;
 require_once('../../shared/code/tce_authorization.php');
 require_once('tce_page_header.php');
 
-echo '<div style="direction:ltr;text-align:left;border:1px solid black; padding:5px; margin:10px; background-color:#DDEEFF; color:#000000; width:95%; margin-left:auto; margin-right:auto; font-weight:bold; font-size:100%;"><center>SMART ONLINE EXAM MAKER AND CHECKER PLATFORM</center></div>'.K_NEWLINE;
+echo '<div style="direction:ltr;text-align:left;border:1px solid black; padding:5px; margin:10px; background-color:#DDEEFF; color:#000000; width:95%; margin-left:auto; margin-right:auto; font-weight:bold; font-size:100%;"><center>Site Map</center></div>'.K_NEWLINE;
 
 
 // Display test limits (if any)

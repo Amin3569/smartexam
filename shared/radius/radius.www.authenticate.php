@@ -10,8 +10,8 @@
  *
  * LICENCE
  *
- *   Copyright (c) 2008, SysCo systèmes de communication sa
- *   SysCo (tm) is a trademark of SysCo systèmes de communication sa
+ *   Copyright (c) 2008, SysCo systï¿½mes de communication sa
+ *   SysCo (tm) is a trademark of SysCo systï¿½mes de communication sa
  *   (http://www.sysco.ch/)
  *   All rights reserved.
  *
@@ -34,7 +34,7 @@
  *
  * @author: SysCo/al
  * @since CreationDate: 2008-01-06
- * @copyright (c) 2008 by SysCo systèmes de communication sa
+ * @copyright (c) 2008 by SysCo systï¿½mes de communication sa
  * @version $LastChangedRevision: 1.0 $
  * @version $LastChangedDate: 2008-01-07 $
  * @version $LastChangedBy: SysCo/al $
@@ -66,7 +66,6 @@
  *
  *********************************************************************/
 
-// 2010-08-09 Nicola Asuni: Code clean-up
 
 require_once('radius.class.php');
 

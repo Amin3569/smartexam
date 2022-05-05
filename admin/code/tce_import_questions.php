@@ -27,18 +27,18 @@ if (isset($menu_mode) and ($menu_mode == 'upload')) {
             $qimp = false;
             switch ($type) {
                 case 1: {
-                    // standard TCExam XML format
+                    // standard SmartExam XML format
                     require_once('../code/tce_class_import_xml.php');
                     $qimp = new XMLQuestionImporter(K_PATH_CACHE.$uploadedfile);
                     break;
                 }
                 case 2: {
-                    // standard TCExam TSV format
+                    // standard SmartExam TSV format
                     $qimp = F_TSVQuestionImporter(K_PATH_CACHE.$uploadedfile);
                     break;
                 }
                 case 3: {
-                    // Custom TCExam XML format
+                    // Custom Smartxam XML format
                     require_once('../code/tce_import_custom.php');
                     $qimp = new CustomQuestionImporter(K_PATH_CACHE.$uploadedfile);
                     break;
